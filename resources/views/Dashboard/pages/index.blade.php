@@ -1,823 +1,766 @@
-@extends('Dashboard.Parth.layout')
+@include('Dashboard.Parth.header')
 
- <!-- sa-app__body -->
-            <div id="top" class="sa-app__body px-2 px-lg-4">
-                <div class="container pb-6">
-                    <div class="py-5">
-                        <div class="row g-4 align-items-center">
-                            <div class="col">
-                                <h1 class="h3 m-0">Dashboard</h1>
-                            </div>
-                            <div class="col-auto d-flex"><select class="form-select me-3">
-                                    <option selected="">7 October, 2021</option>
-                                </select><a href="#" class="btn btn-primary">Export</a></div>
-                        </div>
-                    </div>
-                    <div class="row g-4 g-xl-5">
-                        <div class="col-12 col-md-4 d-flex">
-                            <div class="card saw-indicator flex-grow-1"
-                                data-sa-container-query="{&quot;340&quot;:&quot;saw-indicator--size--lg&quot;}">
-                                <div class="sa-widget-header saw-indicator__header">
-                                    <h2 class="sa-widget-header__title">Total sells</h2>
-                                    <div class="sa-widget-header__actions">
-                                        <div class="dropdown"><button type="button"
-                                                class="btn btn-sm btn-sa-muted d-block" id="widget-context-menu-1"
-                                                data-bs-toggle="dropdown" aria-expanded="false" aria-label="More"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="3" height="13"
-                                                    fill="currentColor">
-                                                    <path
-                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
-                                                    </path>
-                                                </svg></button>
-                                            <ul class="dropdown-menu dropdown-menu-end"
-                                                aria-labelledby="widget-context-menu-1">
-                                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                                <li><a class="dropdown-item" href="#">Move</a></li>
-                                                <li>
-                                                    <hr class="dropdown-divider" />
-                                                </li>
-                                                <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="saw-indicator__body">
-                                    <div class="saw-indicator__value">$3799.00</div>
-                                    <div class="saw-indicator__delta saw-indicator__delta--rise">
-                                        <div class="saw-indicator__delta-direction"><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="9" height="9"
-                                                viewBox="0 0 9 9" fill="currentColor">
-                                                <path d="M9,0L8,6.1L2.8,1L9,0z"></path>
-                                                <circle cx="1" cy="8" r="1"></circle>
-                                                <rect x="0" y="4.5"
-                                                    transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.864 4.0858)"
-                                                    width="7.1" height="2"></rect>
-                                            </svg></div>
-                                        <div class="saw-indicator__delta-value">34.7%</div>
-                                    </div>
-                                    <div class="saw-indicator__caption">Compared to April 2021</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 d-flex">
-                            <div class="card saw-indicator flex-grow-1"
-                                data-sa-container-query="{&quot;340&quot;:&quot;saw-indicator--size--lg&quot;}">
-                                <div class="sa-widget-header saw-indicator__header">
-                                    <h2 class="sa-widget-header__title">Average order value</h2>
-                                    <div class="sa-widget-header__actions">
-                                        <div class="dropdown"><button type="button"
-                                                class="btn btn-sm btn-sa-muted d-block" id="widget-context-menu-2"
-                                                data-bs-toggle="dropdown" aria-expanded="false" aria-label="More"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="3" height="13"
-                                                    fill="currentColor">
-                                                    <path
-                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
-                                                    </path>
-                                                </svg></button>
-                                            <ul class="dropdown-menu dropdown-menu-end"
-                                                aria-labelledby="widget-context-menu-2">
-                                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                                <li><a class="dropdown-item" href="#">Move</a></li>
-                                                <li>
-                                                    <hr class="dropdown-divider" />
-                                                </li>
-                                                <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="saw-indicator__body">
-                                    <div class="saw-indicator__value">$272.98</div>
-                                    <div class="saw-indicator__delta saw-indicator__delta--fall">
-                                        <div class="saw-indicator__delta-direction"><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="9" height="9"
-                                                viewBox="0 0 9 9" fill="currentColor">
-                                                <path d="M2.8,8L8,2.9L9,9L2.8,8z"></path>
-                                                <circle cx="1" cy="1" r="1"></circle>
-                                                <rect x="0" y="2.5"
-                                                    transform="matrix(0.7071 0.7071 -0.7071 0.7071 3.5 -1.4497)"
-                                                    width="7.1" height="2"></rect>
-                                            </svg></div>
-                                        <div class="saw-indicator__delta-value">12.0%</div>
-                                    </div>
-                                    <div class="saw-indicator__caption">Compared to April 2021</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4 d-flex">
-                            <div class="card saw-indicator flex-grow-1"
-                                data-sa-container-query="{&quot;340&quot;:&quot;saw-indicator--size--lg&quot;}">
-                                <div class="sa-widget-header saw-indicator__header">
-                                    <h2 class="sa-widget-header__title">Total orders</h2>
-                                    <div class="sa-widget-header__actions">
-                                        <div class="dropdown"><button type="button"
-                                                class="btn btn-sm btn-sa-muted d-block" id="widget-context-menu-3"
-                                                data-bs-toggle="dropdown" aria-expanded="false" aria-label="More"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="3" height="13"
-                                                    fill="currentColor">
-                                                    <path
-                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
-                                                    </path>
-                                                </svg></button>
-                                            <ul class="dropdown-menu dropdown-menu-end"
-                                                aria-labelledby="widget-context-menu-3">
-                                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                                <li><a class="dropdown-item" href="#">Move</a></li>
-                                                <li>
-                                                    <hr class="dropdown-divider" />
-                                                </li>
-                                                <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="saw-indicator__body">
-                                    <div class="saw-indicator__value">578</div>
-                                    <div class="saw-indicator__delta saw-indicator__delta--rise">
-                                        <div class="saw-indicator__delta-direction"><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="9" height="9"
-                                                viewBox="0 0 9 9" fill="currentColor">
-                                                <path d="M9,0L8,6.1L2.8,1L9,0z"></path>
-                                                <circle cx="1" cy="8" r="1"></circle>
-                                                <rect x="0" y="4.5"
-                                                    transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.864 4.0858)"
-                                                    width="7.1" height="2"></rect>
-                                            </svg></div>
-                                        <div class="saw-indicator__delta-value">27.9%</div>
-                                    </div>
-                                    <div class="saw-indicator__caption">Compared to April 2021</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4 col-xxl-3 d-flex">
-                            <div class="card flex-grow-1 saw-pulse"
-                                data-sa-container-query="{&quot;560&quot;:&quot;saw-pulse--size--lg&quot;}">
-                                <div class="sa-widget-header saw-pulse__header">
-                                    <h2 class="sa-widget-header__title">Active users</h2>
-                                    <div class="sa-widget-header__actions">
-                                        <div class="dropdown"><button type="button"
-                                                class="btn btn-sm btn-sa-muted d-block" id="widget-context-menu-4"
-                                                data-bs-toggle="dropdown" aria-expanded="false" aria-label="More"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="3" height="13"
-                                                    fill="currentColor">
-                                                    <path
-                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
-                                                    </path>
-                                                </svg></button>
-                                            <ul class="dropdown-menu dropdown-menu-end"
-                                                aria-labelledby="widget-context-menu-4">
-                                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                                <li><a class="dropdown-item" href="#">Move</a></li>
-                                                <li>
-                                                    <hr class="dropdown-divider" />
-                                                </li>
-                                                <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="saw-pulse__counter">148</div>
-                                <div class="sa-widget-table saw-pulse__table">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Active pages</th>
-                                                <th class="text-end">Users</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="#" class="text-reset">/products/brandix-z4</a></td>
-                                                <td class="text-end">15</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#" class="text-reset">/categories/drivetrain</a></td>
-                                                <td class="text-end">11</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#" class="text-reset">/categories/monitors</a></td>
-                                                <td class="text-end">7</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#" class="text-reset">/account/orders</a></td>
-                                                <td class="text-end">4</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#" class="text-reset">/cart</a></td>
-                                                <td class="text-end">3</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#" class="text-reset">/checkout</a></td>
-                                                <td class="text-end">3</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#" class="text-reset">/pages/about-us</a></td>
-                                                <td class="text-end">1</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-8 col-xxl-9 d-flex">
-                            <div class="card flex-grow-1 saw-chart"
-                                data-sa-data="[{&quot;label&quot;:&quot;Jan&quot;,&quot;value&quot;:50},{&quot;label&quot;:&quot;Feb&quot;,&quot;value&quot;:130},{&quot;label&quot;:&quot;Mar&quot;,&quot;value&quot;:525},{&quot;label&quot;:&quot;Apr&quot;,&quot;value&quot;:285},{&quot;label&quot;:&quot;May&quot;,&quot;value&quot;:470},{&quot;label&quot;:&quot;Jun&quot;,&quot;value&quot;:130},{&quot;label&quot;:&quot;Jul&quot;,&quot;value&quot;:285},{&quot;label&quot;:&quot;Aug&quot;,&quot;value&quot;:240},{&quot;label&quot;:&quot;Sep&quot;,&quot;value&quot;:710},{&quot;label&quot;:&quot;Oct&quot;,&quot;value&quot;:470},{&quot;label&quot;:&quot;Nov&quot;,&quot;value&quot;:640},{&quot;label&quot;:&quot;Dec&quot;,&quot;value&quot;:1110}]">
-                                <div class="sa-widget-header saw-chart__header">
-                                    <h2 class="sa-widget-header__title">Income statistics</h2>
-                                    <div class="sa-widget-header__actions">
-                                        <div class="dropdown"><button type="button"
-                                                class="btn btn-sm btn-sa-muted d-block" id="widget-context-menu-5"
-                                                data-bs-toggle="dropdown" aria-expanded="false" aria-label="More"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="3" height="13"
-                                                    fill="currentColor">
-                                                    <path
-                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
-                                                    </path>
-                                                </svg></button>
-                                            <ul class="dropdown-menu dropdown-menu-end"
-                                                aria-labelledby="widget-context-menu-5">
-                                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                                <li><a class="dropdown-item" href="#">Move</a></li>
-                                                <li>
-                                                    <hr class="dropdown-divider" />
-                                                </li>
-                                                <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="saw-chart__body">
-                                    <div class="saw-chart__container"><canvas></canvas></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xxl-9 d-flex">
-                            <div class="card flex-grow-1 saw-table">
-                                <div class="sa-widget-header saw-table__header">
-                                    <h2 class="sa-widget-header__title">Recent orders</h2>
-                                    <div class="sa-widget-header__actions">
-                                        <div class="dropdown"><button type="button"
-                                                class="btn btn-sm btn-sa-muted d-block" id="widget-context-menu-6"
-                                                data-bs-toggle="dropdown" aria-expanded="false" aria-label="More"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="3" height="13"
-                                                    fill="currentColor">
-                                                    <path
-                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
-                                                    </path>
-                                                </svg></button>
-                                            <ul class="dropdown-menu dropdown-menu-end"
-                                                aria-labelledby="widget-context-menu-6">
-                                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                                <li><a class="dropdown-item" href="#">Move</a></li>
-                                                <li>
-                                                    <hr class="dropdown-divider" />
-                                                </li>
-                                                <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="saw-table__body sa-widget-table text-nowrap">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>No.</th>
-                                                <th>Status</th>
-                                                <th>Co.</th>
-                                                <th>Customer</th>
-                                                <th>Date</th>
-                                                <th>Total</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00745</a></td>
-                                                <td>
-                                                    <div class="d-flex fs-6">
-                                                        <div class="badge badge-sa-primary">Pending</div>
-                                                    </div>
-                                                </td>
-                                                <td><img src="vendor/flag-icons/24/IT.png"
-                                                        class="sa-language-icon d-block" alt="" title="Italy" /></td>
-                                                <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html"
-                                                            class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
-                                                            <div class="sa-symbol__text">GB</div>
-                                                        </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Giordano
-                                                                Bruno</a></div>
-                                                    </div>
-                                                </td>
-                                                <td>2020-11-02</td>
-                                                <td>$2,742.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00513</a></td>
-                                                <td>
-                                                    <div class="d-flex fs-6">
-                                                        <div class="badge badge-sa-warning">Hold</div>
-                                                    </div>
-                                                </td>
-                                                <td><img src="vendor/flag-icons/24/DE.png"
-                                                        class="sa-language-icon d-block" alt="" title="Germany" /></td>
-                                                <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html"
-                                                            class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
-                                                            <div class="sa-symbol__text">HW</div>
-                                                        </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Hans
-                                                                Weber</a></div>
-                                                    </div>
-                                                </td>
-                                                <td>2020-09-05</td>
-                                                <td>$204.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00507</a></td>
-                                                <td>
-                                                    <div class="d-flex fs-6">
-                                                        <div class="badge badge-sa-primary">Pending</div>
-                                                    </div>
-                                                </td>
-                                                <td><img src="vendor/flag-icons/24/IT.png"
-                                                        class="sa-language-icon d-block" alt="" title="Italy" /></td>
-                                                <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html"
-                                                            class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
-                                                            <div class="sa-symbol__text">AR</div>
-                                                        </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Andrea
-                                                                Rossi</a></div>
-                                                    </div>
-                                                </td>
-                                                <td>2020-08-21</td>
-                                                <td>$5,039.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00104</a></td>
-                                                <td>
-                                                    <div class="d-flex fs-6">
-                                                        <div class="badge badge-sa-danger">Canceled</div>
-                                                    </div>
-                                                </td>
-                                                <td><img src="vendor/flag-icons/24/US.png"
-                                                        class="sa-language-icon d-block" alt="" title="USA" /></td>
-                                                <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html"
-                                                            class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
-                                                            <div class="sa-symbol__text">RF</div>
-                                                        </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Richard
-                                                                Feynman</a></div>
-                                                    </div>
-                                                </td>
-                                                <td>2020-06-22</td>
-                                                <td>$79.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00097</a></td>
-                                                <td>
-                                                    <div class="d-flex fs-6">
-                                                        <div class="badge badge-sa-success">Completed</div>
-                                                    </div>
-                                                </td>
-                                                <td><img src="vendor/flag-icons/24/CO.png"
-                                                        class="sa-language-icon d-block" alt="" title="Columbia" /></td>
-                                                <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html"
-                                                            class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
-                                                            <div class="sa-symbol__text">LG</div>
-                                                        </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Leonardo
-                                                                Garcia</a></div>
-                                                    </div>
-                                                </td>
-                                                <td>2020-05-09</td>
-                                                <td>$826.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00082</a></td>
-                                                <td>
-                                                    <div class="d-flex fs-6">
-                                                        <div class="badge badge-sa-success">Completed</div>
-                                                    </div>
-                                                </td>
-                                                <td><img src="vendor/flag-icons/24/RS.png"
-                                                        class="sa-language-icon d-block" alt="" title="Srbija" /></td>
-                                                <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html"
-                                                            class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
-                                                            <div class="sa-symbol__text">NT</div>
-                                                        </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Nikola
-                                                                Tesla</a></div>
-                                                    </div>
-                                                </td>
-                                                <td>2020-04-27</td>
-                                                <td>$1,052.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00063</a></td>
-                                                <td>
-                                                    <div class="d-flex fs-6">
-                                                        <div class="badge badge-sa-primary">Pending</div>
-                                                    </div>
-                                                </td>
-                                                <td><img src="vendor/flag-icons/24/FR.png"
-                                                        class="sa-language-icon d-block" alt="" title="France" /></td>
-                                                <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html"
-                                                            class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
-                                                            <div class="sa-symbol__text">MC</div>
-                                                        </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Marie
-                                                                Curie</a></div>
-                                                    </div>
-                                                </td>
-                                                <td>2020-02-09</td>
-                                                <td>$441.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="app-order.html" class="text-reset">#00012</a></td>
-                                                <td>
-                                                    <div class="d-flex fs-6">
-                                                        <div class="badge badge-sa-success">Completed</div>
-                                                    </div>
-                                                </td>
-                                                <td><img src="vendor/flag-icons/24/RU.png"
-                                                        class="sa-language-icon d-block" alt="" title="Russia" /></td>
-                                                <td>
-                                                    <div class="d-flex align-items-center"><a href="app-customer.html"
-                                                            class="sa-symbol sa-symbol--shape--circle sa-symbol--size--md me-3">
-                                                            <div class="sa-symbol__text">KT</div>
-                                                        </a>
-                                                        <div><a href="app-customer.html" class="text-reset">Konstantin
-                                                                Tsiolkovsky</a></div>
-                                                    </div>
-                                                </td>
-                                                <td>2020-01-01</td>
-                                                <td>$12,961.00</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xxl-3 d-flex">
-                            <div class="card flex-grow-1 saw-chart-circle"
-                                data-sa-data="[{&quot;label&quot;:&quot;Yandex&quot;,&quot;value&quot;:2742,&quot;color&quot;:&quot;#ffd333&quot;,&quot;orders&quot;:12},{&quot;label&quot;:&quot;YouTube&quot;,&quot;value&quot;:3272,&quot;color&quot;:&quot;#e62e2e&quot;,&quot;orders&quot;:51},{&quot;label&quot;:&quot;Google&quot;,&quot;value&quot;:2303,&quot;color&quot;:&quot;#3377ff&quot;,&quot;orders&quot;:4},{&quot;label&quot;:&quot;Facebook&quot;,&quot;value&quot;:1434,&quot;color&quot;:&quot;#29cccc&quot;,&quot;orders&quot;:10},{&quot;label&quot;:&quot;Instagram&quot;,&quot;value&quot;:799,&quot;color&quot;:&quot;#5dc728&quot;,&quot;orders&quot;:1}]"
-                                data-sa-container-query="{&quot;600&quot;:&quot;saw-chart-circle--size--lg&quot;}">
-                                <div class="sa-widget-header saw-chart-circle__header">
-                                    <h2 class="sa-widget-header__title">Sales by traffic source</h2>
-                                    <div class="sa-widget-header__actions">
-                                        <div class="dropdown"><button type="button"
-                                                class="btn btn-sm btn-sa-muted d-block" id="widget-context-menu-7"
-                                                data-bs-toggle="dropdown" aria-expanded="false" aria-label="More"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="3" height="13"
-                                                    fill="currentColor">
-                                                    <path
-                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
-                                                    </path>
-                                                </svg></button>
-                                            <ul class="dropdown-menu dropdown-menu-end"
-                                                aria-labelledby="widget-context-menu-7">
-                                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                                <li><a class="dropdown-item" href="#">Move</a></li>
-                                                <li>
-                                                    <hr class="dropdown-divider" />
-                                                </li>
-                                                <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="saw-chart-circle__body">
-                                    <div class="saw-chart-circle__container"><canvas></canvas></div>
-                                </div>
-                                <div class="sa-widget-table saw-chart-circle__table">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Source</th>
-                                                <th class="text-center">Orders</th>
-                                                <th class="text-end">Amount</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="saw-chart-circle__symbol"
-                                                            style="--saw-chart-circle__symbol--color:#ffd333"></div>
-                                                        <div class="ps-2">Yandex</div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-center">12</td>
-                                                <td class="text-end">
-                                                    <div class="sa-price"><span class="sa-price__symbol">$</span><span
-                                                            class="sa-price__integer">2,742</span><span
-                                                            class="sa-price__decimal">.00</span></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="saw-chart-circle__symbol"
-                                                            style="--saw-chart-circle__symbol--color:#e62e2e"></div>
-                                                        <div class="ps-2">YouTube</div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-center">51</td>
-                                                <td class="text-end">
-                                                    <div class="sa-price"><span class="sa-price__symbol">$</span><span
-                                                            class="sa-price__integer">3,272</span><span
-                                                            class="sa-price__decimal">.00</span></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="saw-chart-circle__symbol"
-                                                            style="--saw-chart-circle__symbol--color:#3377ff"></div>
-                                                        <div class="ps-2">Google</div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-center">4</td>
-                                                <td class="text-end">
-                                                    <div class="sa-price"><span class="sa-price__symbol">$</span><span
-                                                            class="sa-price__integer">2,303</span><span
-                                                            class="sa-price__decimal">.00</span></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="saw-chart-circle__symbol"
-                                                            style="--saw-chart-circle__symbol--color:#29cccc"></div>
-                                                        <div class="ps-2">Facebook</div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-center">10</td>
-                                                <td class="text-end">
-                                                    <div class="sa-price"><span class="sa-price__symbol">$</span><span
-                                                            class="sa-price__integer">1,434</span><span
-                                                            class="sa-price__decimal">.00</span></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="saw-chart-circle__symbol"
-                                                            style="--saw-chart-circle__symbol--color:#5dc728"></div>
-                                                        <div class="ps-2">Instagram</div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-center">1</td>
-                                                <td class="text-end">
-                                                    <div class="sa-price"><span class="sa-price__symbol">$</span><span
-                                                            class="sa-price__integer">799</span><span
-                                                            class="sa-price__decimal">.00</span></div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6 d-flex">
-                            <div class="card flex-grow-1">
-                                <div class="card-body">
-                                    <div class="sa-widget-header mb-4">
-                                        <h2 class="sa-widget-header__title">Recent activity</h2>
-                                        <div class="sa-widget-header__actions">
-                                            <div class="dropdown"><button type="button"
-                                                    class="btn btn-sm btn-sa-muted d-block" id="widget-context-menu-8"
-                                                    data-bs-toggle="dropdown" aria-expanded="false"
-                                                    aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
-                                                        height="13" fill="currentColor">
-                                                        <path
-                                                            d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
-                                                        </path>
-                                                    </svg></button>
-                                                <ul class="dropdown-menu dropdown-menu-end"
-                                                    aria-labelledby="widget-context-menu-8">
-                                                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                                                    <li><a class="dropdown-item" href="#">Move</a></li>
-                                                    <li>
-                                                        <hr class="dropdown-divider" />
-                                                    </li>
-                                                    <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="sa-timeline mb-n2 pt-2">
-                                        <ul class="sa-timeline__list">
-                                            <li class="sa-timeline__item">
-                                                <div class="sa-timeline__item-title">Yesterday</div>
-                                                <div class="sa-timeline__item-content">Phasellus id mattis nulla. Mauris
-                                                    velit nisi, imperdiet vitae sodales in, maximus ut lectus. Vivamus
-                                                    commodo scelerisque lacus, at porttitor dui iaculis id. <a
-                                                        href="#">Curabitur imperdiet ultrices fermentum.</a></div>
-                                            </li>
-                                            <li class="sa-timeline__item">
-                                                <div class="sa-timeline__item-title">5 days ago</div>
-                                                <div class="sa-timeline__item-content">Nulla ut ex mollis, volutpat
-                                                    tellus vitae, accumsan ligula. <a href="#">Curabitur imperdiet
-                                                        ultrices fermentum.</a></div>
-                                            </li>
-                                            <li class="sa-timeline__item">
-                                                <div class="sa-timeline__item-title">March 27</div>
-                                                <div class="sa-timeline__item-content">Donec tempor sapien et fringilla
-                                                    facilisis. Nam maximus consectetur diam.</div>
-                                            </li>
-                                            <li class="sa-timeline__item">
-                                                <div class="sa-timeline__item-title">November 30</div>
-                                                <div class="sa-timeline__item-content">Many philosophical debates that
-                                                    began in ancient times are still debated today. In one general
-                                                    sense, philosophy is associated with wisdom, intellectual culture
-                                                    and a search for knowledge.</div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6 d-flex">
-                            <div class="card flex-grow-1">
-                                <div class="card-body">
-                                    <div class="sa-widget-header">
-                                        <h2 class="sa-widget-header__title">Recent reviews</h2>
-                                        <div class="sa-widget-header__actions">
-                                            <div class="dropdown"><button type="button"
-                                                    class="btn btn-sm btn-sa-muted d-block" id="widget-context-menu-9"
-                                                    data-bs-toggle="dropdown" aria-expanded="false"
-                                                    aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
-                                                        height="13" fill="currentColor">
-                                                        <path
-                                                            d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
-                                                        </path>
-                                                    </svg></button>
-                                                <ul class="dropdown-menu dropdown-menu-end"
-                                                    aria-labelledby="widget-context-menu-9">
-                                                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                                                    <li><a class="dropdown-item" href="#">Move</a></li>
-                                                    <li>
-                                                        <hr class="dropdown-divider" />
-                                                    </li>
-                                                    <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item py-2">
-                                        <div class="d-flex align-items-center py-3"><a href="app-product.html"
-                                                class="me-4">
-                                                <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                    <img src="images/products/product-1-40x40.jpg" width="40"
-                                                        height="40" alt="" /></div>
-                                            </a>
-                                            <div class="d-flex align-items-center flex-grow-1 flex-wrap">
-                                                <div class="col"><a href="app-product.html"
-                                                        class="text-reset fs-exact-14">Wiper Blades Brandix WL2</a>
-                                                    <div class="text-muted fs-exact-13">Reviewed by <a
-                                                            href="app-customer.html" class="text-reset">Ryan Ford</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-sm-auto">
-                                                    <div class="sa-rating ms-sm-3 my-2 my-sm-0"
-                                                        style="--sa-rating--value:0.6">
-                                                        <div class="sa-rating__body"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item py-2">
-                                        <div class="d-flex align-items-center py-3"><a href="app-product.html"
-                                                class="me-4">
-                                                <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                    <img src="images/products/product-7-40x40.jpg" width="40"
-                                                        height="40" alt="" /></div>
-                                            </a>
-                                            <div class="d-flex align-items-center flex-grow-1 flex-wrap">
-                                                <div class="col"><a href="app-product.html"
-                                                        class="text-reset fs-exact-14">Electric Planer Brandix KL370090G
-                                                        300 Watts</a>
-                                                    <div class="text-muted fs-exact-13">Reviewed by <a
-                                                            href="app-customer.html" class="text-reset">Adam Taylor</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-sm-auto">
-                                                    <div class="sa-rating ms-sm-3 my-2 my-sm-0"
-                                                        style="--sa-rating--value:0.8">
-                                                        <div class="sa-rating__body"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item py-2">
-                                        <div class="d-flex align-items-center py-3"><a href="app-product.html"
-                                                class="me-4">
-                                                <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                    <img src="images/products/product-10-40x40.jpg" width="40"
-                                                        height="40" alt="" /></div>
-                                            </a>
-                                            <div class="d-flex align-items-center flex-grow-1 flex-wrap">
-                                                <div class="col"><a href="app-product.html"
-                                                        class="text-reset fs-exact-14">Water Tap</a>
-                                                    <div class="text-muted fs-exact-13">Reviewed by <a
-                                                            href="app-customer.html" class="text-reset">Jessica
-                                                            Moore</a></div>
-                                                </div>
-                                                <div class="col-12 col-sm-auto">
-                                                    <div class="sa-rating ms-sm-3 my-2 my-sm-0"
-                                                        style="--sa-rating--value:0.4">
-                                                        <div class="sa-rating__body"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item py-2">
-                                        <div class="d-flex align-items-center py-3"><a href="app-product.html"
-                                                class="me-4">
-                                                <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                    <img src="images/products/product-5-40x40.jpg" width="40"
-                                                        height="40" alt="" /></div>
-                                            </a>
-                                            <div class="d-flex align-items-center flex-grow-1 flex-wrap">
-                                                <div class="col"><a href="app-product.html"
-                                                        class="text-reset fs-exact-14">Brandix Router Power Tool
-                                                        2017ERXPK</a>
-                                                    <div class="text-muted fs-exact-13">Reviewed by <a
-                                                            href="app-customer.html" class="text-reset">Helena
-                                                            Garcia</a></div>
-                                                </div>
-                                                <div class="col-12 col-sm-auto">
-                                                    <div class="sa-rating ms-sm-3 my-2 my-sm-0"
-                                                        style="--sa-rating--value:0.6">
-                                                        <div class="sa-rating__body"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item py-2">
-                                        <div class="d-flex align-items-center py-3"><a href="app-product.html"
-                                                class="me-4">
-                                                <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                    <img src="images/products/product-2-40x40.jpg" width="40"
-                                                        height="40" alt="" /></div>
-                                            </a>
-                                            <div class="d-flex align-items-center flex-grow-1 flex-wrap">
-                                                <div class="col"><a href="app-product.html"
-                                                        class="text-reset fs-exact-14">Undefined Tool IRadix DPS3000SY
-                                                        2700 Watts</a>
-                                                    <div class="text-muted fs-exact-13">Reviewed by <a
-                                                            href="app-customer.html" class="text-reset">Ryan Ford</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-sm-auto">
-                                                    <div class="sa-rating ms-sm-3 my-2 my-sm-0"
-                                                        style="--sa-rating--value:1">
-                                                        <div class="sa-rating__body"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item py-2">
-                                        <div class="d-flex align-items-center py-3"><a href="app-product.html"
-                                                class="me-4">
-                                                <div class="sa-symbol sa-symbol--shape--rounded sa-symbol--size--lg">
-                                                    <img src="images/products/product-16-40x40.jpg" width="40"
-                                                        height="40" alt="" /></div>
-                                            </a>
-                                            <div class="d-flex align-items-center flex-grow-1 flex-wrap">
-                                                <div class="col"><a href="app-product.html"
-                                                        class="text-reset fs-exact-14">Brandix Screwdriver SCREW150</a>
-                                                    <div class="text-muted fs-exact-13">Reviewed by <a
-                                                            href="app-customer.html" class="text-reset">Charlotte
-                                                            Jones</a></div>
-                                                </div>
-                                                <div class="col-12 col-sm-auto">
-                                                    <div class="sa-rating ms-sm-3 my-2 my-sm-0"
-                                                        style="--sa-rating--value:0.8">
-                                                        <div class="sa-rating__body"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- sa-app__body / end --><!-- sa-app__footer -->
+          <!-- ========== Topbar Start ========== -->
+         
 
-         @include('Dashboard.Parth.footer')   
+          <!-- Activity Timeline -->
+          <div>
+               <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-activity-offcanvas" style="max-width: 450px; width: 100%;">
+                    <div class="d-flex align-items-center bg-primary p-3 offcanvas-header">
+                         <h5 class="text-white m-0 fw-semibold">Activity Stream</h5>
+                         <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body p-0">
+                         <div data-simplebar class="h-100 p-4">
+                              <div class="position-relative ms-2">
+                                   <span class="position-absolute start-0  top-0 border border-dashed h-100"></span>
+                                   <div class="position-relative ps-4">
+                                        <div class="mb-4">
+                                             <span class="position-absolute start-0 avatar-sm translate-middle-x bg-danger d-inline-flex align-items-center justify-content-center rounded-circle text-light fs-20"><iconify-icon icon="iconamoon:folder-check-duotone"></iconify-icon></span>
+                                             <div class="ms-2">
+                                                  <h5 class="mb-1 text-dark fw-semibold fs-15 lh-base">Report-Fix / Update </h5>
+                                                  <p class="d-flex align-items-center">Add 3 files to <span class=" d-flex align-items-center text-primary ms-1"><iconify-icon icon="iconamoon:file-light"></iconify-icon> Tasks</span></p>
+                                                  <div class="bg-light bg-opacity-50 rounded-2 p-2">
+                                                       <div class="row">
+                                                            <div class="col-lg-6 border-end border-light">
+                                                                 <div class="d-flex align-items-center gap-2">
+                                                                      <i class="bx bxl-figma fs-20 text-red"></i>
+                                                                      <a href="#!" class="text-dark fw-medium">Concept.fig</a>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                 <div class="d-flex align-items-center gap-2">
+                                                                      <i class="bx bxl-file-doc fs-20 text-success"></i>
+                                                                      <a href="#!" class="text-dark fw-medium">larkon.docs</a>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <h6 class="mt-2 text-muted">Monday , 4:24 PM</h6>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="position-relative ps-4">
+                                        <div class="mb-4">
+                                             <span class="position-absolute start-0 avatar-sm translate-middle-x bg-success d-inline-flex align-items-center justify-content-center rounded-circle text-light fs-20"><iconify-icon icon="iconamoon:check-circle-1-duotone"></iconify-icon></span>
+                                             <div class="ms-2">
+                                                  <h5 class="mb-1 text-dark fw-semibold fs-15 lh-base">Project Status
+                                                  </h5>
+                                                  <p class="d-flex align-items-center mb-0">Marked<span class=" d-flex align-items-center text-primary mx-1"><iconify-icon icon="iconamoon:file-light"></iconify-icon> Design </span> as <span class="badge bg-success-subtle text-success px-2 py-1 ms-1"> Completed</span></p>
+                                                  <div class="d-flex align-items-center gap-3 mt-1 bg-light bg-opacity-50 p-2 rounded-2">
+                                                       <a href="#!" class="fw-medium text-dark">UI/UX Figma Design</a>
+                                                       <div class="ms-auto">
+                                                            <a href="#!" class="fw-medium text-primary fs-18" data-bs-toggle="tooltip" data-bs-title="Download" data-bs-placement="bottom"><iconify-icon icon="iconamoon:cloud-download-duotone"></iconify-icon></a>
+                                                       </div>
+                                                  </div>
+                                                  <h6 class="mt-3 text-muted">Monday , 3:00 PM</h6>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="position-relative ps-4">
+                                        <div class="mb-4">
+                                             <span class="position-absolute start-0 avatar-sm translate-middle-x bg-primary d-inline-flex align-items-center justify-content-center rounded-circle text-light fs-16">UI</span>
+                                             <div class="ms-2">
+                                                  <h5 class="mb-1 text-dark fw-semibold fs-15">Larkon Application UI v2.0.0 <span class="badge bg-primary-subtle text-primary px-2 py-1 ms-1"> Latest</span>
+                                                  </h5>
+                                                  <p>Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                                                  <div class="mt-2">
+                                                       <a href="#!" class="btn btn-light btn-sm">Download Zip</a>
+                                                  </div>
+                                                  <h6 class="mt-3 text-muted">Monday , 2:10 PM</h6>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="position-relative ps-4">
+                                        <div class="mb-4">
+                                             <span class="position-absolute start-0 translate-middle-x bg-success bg-gradient d-inline-flex align-items-center justify-content-center rounded-circle text-light fs-20"><img src="assets/images/users/avatar-7.jpg" alt="avatar-5" class="avatar-sm rounded-circle"></span>
+                                             <div class="ms-2">
+                                                  <h5 class="mb-0 text-dark fw-semibold fs-15 lh-base">Alex Smith Attached Photos
+                                                  </h5>
+                                                  <div class="row g-2 mt-2">
+                                                       <div class="col-lg-4">
+                                                            <a href="#!">
+                                                                 <img src="assets/images/small/img-6.jpg" alt="" class="img-fluid rounded">
+                                                            </a>
+                                                       </div>
+                                                       <div class="col-lg-4">
+                                                            <a href="#!">
+                                                                 <img src="assets/images/small/img-3.jpg" alt="" class="img-fluid rounded">
+                                                            </a>
+                                                       </div>
+                                                       <div class="col-lg-4">
+                                                            <a href="#!">
+                                                                 <img src="assets/images/small/img-4.jpg" alt="" class="img-fluid rounded">
+                                                            </a>
+                                                       </div>
+                                                  </div>
+                                                  <h6 class="mt-3 text-muted">Monday 1:00 PM</h6>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="position-relative ps-4">
+                                        <div class="mb-4">
+                                             <span class="position-absolute start-0 translate-middle-x bg-success bg-gradient d-inline-flex align-items-center justify-content-center rounded-circle text-light fs-20"><img src="assets/images/users/avatar-6.jpg" alt="avatar-5" class="avatar-sm rounded-circle"></span>
+                                             <div class="ms-2">
+                                                  <h5 class="mb-0 text-dark fw-semibold fs-15 lh-base">Rebecca J. added a new team member
+                                                  </h5>
+                                                  <p class="d-flex align-items-center gap-1"><iconify-icon icon="iconamoon:check-circle-1-duotone" class="text-success"></iconify-icon> Added a new member to Front Dashboard</p>
+                                                  <h6 class="mt-3 text-muted">Monday 10:00 AM</h6>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="position-relative ps-4">
+                                        <div class="mb-4">
+                                             <span class="position-absolute start-0 avatar-sm translate-middle-x bg-warning d-inline-flex align-items-center justify-content-center rounded-circle text-light fs-20"><iconify-icon icon="iconamoon:certificate-badge-duotone"></iconify-icon></span>
+                                             <div class="ms-2">
+                                                  <h5 class="mb-0 text-dark fw-semibold fs-15 lh-base">Achievements
+                                                  </h5>
+                                                  <p class="d-flex align-items-center gap-1 mt-1">Earned a <iconify-icon icon="iconamoon:certificate-badge-duotone" class="text-danger fs-20"></iconify-icon>" Best Product Award"</p>
+                                                  <h6 class="mt-3 text-muted">Monday 9:30 AM</h6>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <a href="#!" class="btn btn-outline-dark w-100">View All</a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Right Sidebar (Theme Settings) -->
+          <div>
+               <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-settings-offcanvas">
+                    <div class="d-flex align-items-center bg-primary p-3 offcanvas-header">
+                         <h5 class="text-white m-0">Theme Settings</h5>
+                         <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body p-0">
+                         <div data-simplebar class="h-100">
+                              <div class="p-3 settings-bar">
+
+                                   <div>
+                                        <h5 class="mb-3 font-16 fw-semibold">Color Scheme</h5>
+
+                                        <div class="form-check mb-2">
+                                             <input class="form-check-input" type="radio" name="data-bs-theme" id="layout-color-light" value="light">
+                                             <label class="form-check-label" for="layout-color-light">Light</label>
+                                        </div>
+
+                                        <div class="form-check mb-2">
+                                             <input class="form-check-input" type="radio" name="data-bs-theme" id="layout-color-dark" value="dark">
+                                             <label class="form-check-label" for="layout-color-dark">Dark</label>
+                                        </div>
+                                   </div>
+
+                                   <div>
+                                        <h5 class="my-3 font-16 fw-semibold">Topbar Color</h5>
+
+                                        <div class="form-check mb-2">
+                                             <input class="form-check-input" type="radio" name="data-topbar-color" id="topbar-color-light" value="light">
+                                             <label class="form-check-label" for="topbar-color-light">Light</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                             <input class="form-check-input" type="radio" name="data-topbar-color" id="topbar-color-dark" value="dark">
+                                             <label class="form-check-label" for="topbar-color-dark">Dark</label>
+                                        </div>
+                                   </div>
+
+
+                                   <div>
+                                        <h5 class="my-3 font-16 fw-semibold">Menu Color</h5>
+
+                                        <div class="form-check mb-2">
+                                             <input class="form-check-input" type="radio" name="data-menu-color" id="leftbar-color-light" value="light">
+                                             <label class="form-check-label" for="leftbar-color-light">
+                                                  Light
+                                             </label>
+                                        </div>
+
+                                        <div class="form-check mb-2">
+                                             <input class="form-check-input" type="radio" name="data-menu-color" id="leftbar-color-dark" value="dark">
+                                             <label class="form-check-label" for="leftbar-color-dark">
+                                                  Dark
+                                             </label>
+                                        </div>
+                                   </div>
+
+                                   <div>
+                                        <h5 class="my-3 font-16 fw-semibold">Sidebar Size</h5>
+
+                                        <div class="form-check mb-2">
+                                             <input class="form-check-input" type="radio" name="data-menu-size" id="leftbar-size-default" value="default">
+                                             <label class="form-check-label" for="leftbar-size-default">
+                                                  Default
+                                             </label>
+                                        </div>
+
+                                        <div class="form-check mb-2">
+                                             <input class="form-check-input" type="radio" name="data-menu-size" id="leftbar-size-small" value="condensed">
+                                             <label class="form-check-label" for="leftbar-size-small">
+                                                  Condensed
+                                             </label>
+                                        </div>
+
+                                        <div class="form-check mb-2">
+                                             <input class="form-check-input" type="radio" name="data-menu-size" id="leftbar-hidden" value="hidden">
+                                             <label class="form-check-label" for="leftbar-hidden">
+                                                  Hidden
+                                             </label>
+                                        </div>
+
+                                        <div class="form-check mb-2">
+                                             <input class="form-check-input" type="radio" name="data-menu-size" id="leftbar-size-small-hover-active" value="sm-hover-active">
+                                             <label class="form-check-label" for="leftbar-size-small-hover-active">
+                                                  Small Hover Active
+                                             </label>
+                                        </div>
+
+                                        <div class="form-check mb-2">
+                                             <input class="form-check-input" type="radio" name="data-menu-size" id="leftbar-size-small-hover" value="sm-hover">
+                                             <label class="form-check-label" for="leftbar-size-small-hover">
+                                                  Small Hover
+                                             </label>
+                                        </div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+                    <div class="offcanvas-footer border-top p-3 text-center">
+                         <div class="row">
+                              <div class="col">
+                                   <button type="button" class="btn btn-danger w-100" id="reset-layout">Reset</button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <!-- ========== Topbar End ========== -->
+
+          <!-- ========== App Menu Start ========== -->
+          
+          <!-- ========== App Menu End ========== -->
+
+          <!-- ==================================================== -->
+          <!-- Start right Content here -->
+          <!-- ==================================================== -->
+          <div class="page-content">
+
+               <!-- Start Container Fluid -->
+               <div class="container-fluid">
+
+                    <!-- Start here.... -->
+                    <div class="row">
+                         <div class="col-xxl-5">
+                              <div class="row">
+                                   <div class="col-12">
+                                        <div class="alert alert-primary text-truncate mb-3" role="alert">
+                                             We regret to inform you that our server is currently experiencing technical difficulties.
+                                        </div>
+                                   </div>
+
+                                   <div class="col-md-6">
+                                        <div class="card overflow-hidden">
+                                             <div class="card-body">
+                                                  <div class="row">
+                                                       <div class="col-6">
+                                                            <div class="avatar-md bg-soft-primary rounded">
+                                                                 <iconify-icon icon="solar:cart-5-bold-duotone" class="avatar-title fs-32 text-primary"></iconify-icon>
+                                                            </div>
+                                                       </div> <!-- end col -->
+                                                       <div class="col-6 text-end">
+                                                            <p class="text-muted mb-0 text-truncate">Total Orders</p>
+                                                            <h3 class="text-dark mt-1 mb-0">13, 647</h3>
+                                                       </div> <!-- end col -->
+                                                  </div> <!-- end row-->
+                                             </div> <!-- end card body -->
+                                             <div class="card-footer py-2 bg-light bg-opacity-50">
+                                                  <div class="d-flex align-items-center justify-content-between">
+                                                       <div>
+                                                            <span class="text-success"> <i class="bx bxs-up-arrow fs-12"></i> 2.3%</span>
+                                                            <span class="text-muted ms-1 fs-12">Last Week</span>
+                                                       </div>
+                                                       <a href="#!" class="text-reset fw-semibold fs-12">View More</a>
+                                                  </div>
+                                             </div> <!-- end card body -->
+                                        </div> <!-- end card -->
+                                   </div> <!-- end col -->
+                                   <div class="col-md-6">
+                                        <div class="card overflow-hidden">
+                                             <div class="card-body">
+                                                  <div class="row">
+                                                       <div class="col-6">
+                                                            <div class="avatar-md bg-soft-primary rounded">
+                                                                 <i class="bx bx-award avatar-title fs-24 text-primary"></i>
+                                                            </div>
+                                                       </div> <!-- end col -->
+                                                       <div class="col-6 text-end">
+                                                            <p class="text-muted mb-0 text-truncate">New Leads</p>
+                                                            <h3 class="text-dark mt-1 mb-0">9, 526</h3>
+                                                       </div> <!-- end col -->
+                                                  </div> <!-- end row-->
+                                             </div> <!-- end card body -->
+                                             <div class="card-footer py-2 bg-light bg-opacity-50">
+                                                  <div class="d-flex align-items-center justify-content-between">
+                                                       <div>
+                                                            <span class="text-success"> <i class="bx bxs-up-arrow fs-12"></i> 8.1%</span>
+                                                            <span class="text-muted ms-1 fs-12">Last Month</span>
+                                                       </div>
+                                                       <a href="#!" class="text-reset fw-semibold fs-12">View More</a>
+                                                  </div>
+                                             </div> <!-- end card body -->
+                                        </div> <!-- end card -->
+                                   </div> <!-- end col -->
+                                   <div class="col-md-6">
+                                        <div class="card overflow-hidden">
+                                             <div class="card-body">
+                                                  <div class="row">
+                                                       <div class="col-6">
+                                                            <div class="avatar-md bg-soft-primary rounded">
+                                                                 <i class="bx bxs-backpack avatar-title fs-24 text-primary"></i>
+                                                            </div>
+                                                       </div> <!-- end col -->
+                                                       <div class="col-6 text-end">
+                                                            <p class="text-muted mb-0 text-truncate">Deals</p>
+                                                            <h3 class="text-dark mt-1 mb-0">976</h3>
+                                                       </div> <!-- end col -->
+                                                  </div> <!-- end row-->
+                                             </div> <!-- end card body -->
+                                             <div class="card-footer py-2 bg-light bg-opacity-50">
+                                                  <div class="d-flex align-items-center justify-content-between">
+                                                       <div>
+                                                            <span class="text-danger"> <i class="bx bxs-down-arrow fs-12"></i> 0.3%</span>
+                                                            <span class="text-muted ms-1 fs-12">Last Month</span>
+                                                       </div>
+                                                       <a href="#!" class="text-reset fw-semibold fs-12">View More</a>
+                                                  </div>
+                                             </div> <!-- end card body -->
+                                        </div> <!-- end card -->
+                                   </div> <!-- end col -->
+                                   <div class="col-md-6">
+                                        <div class="card overflow-hidden">
+                                             <div class="card-body">
+                                                  <div class="row">
+                                                       <div class="col-6">
+                                                            <div class="avatar-md bg-soft-primary rounded">
+                                                                 <i class="bx bx-dollar-circle avatar-title text-primary fs-24"></i>
+                                                            </div>
+                                                       </div> <!-- end col -->
+                                                       <div class="col-6 text-end">
+                                                            <p class="text-muted mb-0 text-truncate">Booked Revenue</p>
+                                                            <h3 class="text-dark mt-1 mb-0">$123.6k</h3>
+                                                       </div> <!-- end col -->
+                                                  </div> <!-- end row-->
+                                             </div> <!-- end card body -->
+                                             <div class="card-footer py-2 bg-light bg-opacity-50">
+                                                  <div class="d-flex align-items-center justify-content-between">
+                                                       <div>
+                                                            <span class="text-danger"> <i class="bx bxs-down-arrow fs-12"></i> 10.6%</span>
+                                                            <span class="text-muted ms-1 fs-12">Last Month</span>
+                                                       </div>
+                                                       <a href="#!" class="text-reset fw-semibold fs-12">View More</a>
+                                                  </div>
+                                             </div> <!-- end card body -->
+                                        </div> <!-- end card -->
+                                   </div> <!-- end col -->
+                              </div> <!-- end row -->
+                         </div> <!-- end col -->
+
+                         <div class="col-xxl-7">
+                              <div class="card">
+                                   <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                             <h4 class="card-title">Performance</h4>
+                                             <div>
+                                                  <button type="button" class="btn btn-sm btn-outline-light">ALL</button>
+                                                  <button type="button" class="btn btn-sm btn-outline-light">1M</button>
+                                                  <button type="button" class="btn btn-sm btn-outline-light">6M</button>
+                                                  <button type="button" class="btn btn-sm btn-outline-light active">1Y</button>
+                                             </div>
+                                        </div> <!-- end card-title-->
+
+                                        <div dir="ltr">
+                                             <div id="dash-performance-chart" class="apex-charts"></div>
+                                        </div>
+                                   </div> <!-- end card body -->
+                              </div> <!-- end card -->
+                         </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                         <div class="col-lg-4">
+                              <div class="card">
+                                   <div class="card-body">
+                                        <h5 class="card-title">Conversions</h5>
+                                        <div id="conversions" class="apex-charts mb-2 mt-n2"></div>
+                                        <div class="row text-center">
+                                             <div class="col-6">
+                                                  <p class="text-muted mb-2">This Week</p>
+                                                  <h3 class="text-dark mb-3">23.5k</h3>
+                                             </div> <!-- end col -->
+                                             <div class="col-6">
+                                                  <p class="text-muted mb-2">Last Week</p>
+                                                  <h3 class="text-dark mb-3">41.05k</h3>
+                                             </div> <!-- end col -->
+                                        </div> <!-- end row -->
+                                        <div class="text-center">
+                                             <button type="button" class="btn btn-light shadow-none w-100">View Details</button>
+                                        </div> <!-- end row -->
+                                   </div>
+                              </div>
+                         </div> <!-- end left chart card -->
+
+                         <div class="col-lg-4">
+                              <div class="card">
+                                   <div class="card-body">
+                                        <h5 class="card-title">Sessions by Country</h5>
+                                        <div id="world-map-markers" style="height: 316px">
+                                        </div>
+                                        <div class="row text-center">
+                                             <div class="col-6">
+                                                  <p class="text-muted mb-2">This Week</p>
+                                                  <h3 class="text-dark mb-3">23.5k</h3>
+                                             </div> <!-- end col -->
+                                             <div class="col-6">
+                                                  <p class="text-muted mb-2">Last Week</p>
+                                                  <h3 class="text-dark mb-3">41.05k</h3>
+                                             </div> <!-- end col -->
+                                        </div> <!-- end row -->
+                                   </div>
+                              </div> <!-- end card-->
+                         </div> <!-- end col -->
+
+                         <div class="col-lg-4">
+                              <div class="card card-height-100">
+                                   <div class="card-header d-flex align-items-center justify-content-between gap-2">
+                                        <h4 class="card-title flex-grow-1">Top Pages</h4>
+
+                                        <a href="#" class="btn btn-sm btn-soft-primary">View All</a>
+                                   </div>
+                                   <div class="table-responsive">
+                                        <table class="table table-hover table-nowrap table-centered m-0">
+                                             <thead class="bg-light bg-opacity-50">
+                                                  <tr>
+                                                       <th class="text-muted ps-3">Page Path</th>
+                                                       <th class="text-muted">Page Views</th>
+                                                       <th class="text-muted">Exit Rate</th>
+                                                  </tr>
+                                             </thead>
+                                             <tbody>
+                                                  <tr>
+                                                       <td class="ps-3"><a href="#" class="text-muted">larkon/ecommerce.html</a></td>
+                                                       <td>465 </td>
+                                                       <td><span class="badge badge-soft-success">4.4%</span></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td class="ps-3"><a href="#" class="text-muted">larkon/dashboard.html</a></td>
+                                                       <td> 426</td>
+                                                       <td><span class="badge badge-soft-danger">20.4%</span></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td class="ps-3"><a href="#" class="text-muted">larkon/chat.html</a></td>
+                                                       <td>254 </td>
+                                                       <td><span class="badge badge-soft-warning">12.25%</span></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td class="ps-3"><a href="#" class="text-muted">larkon/auth-login.html</a></td>
+                                                       <td> 3369</td>
+                                                       <td><span class="badge badge-soft-success">5.2%</span></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td class="ps-3"><a href="#" class="text-muted">larkon/email.html</a></td>
+                                                       <td>985 </td>
+                                                       <td><span class="badge badge-soft-danger">64.2%</span></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td class="ps-3"><a href="#" class="text-muted">larkon/social.html</a></td>
+                                                       <td>653 </td>
+                                                       <td><span class="badge badge-soft-success">2.4%</span></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td class="ps-3"><a href="#" class="text-muted">larkon/blog.html</a></td>
+                                                       <td>478 </td>
+                                                       <td><span class="badge badge-soft-danger">1.4%</span></td>
+                                                  </tr>
+                                             </tbody>
+                                        </table>
+                                   </div>
+                              </div>
+                         </div> <!-- end col -->
+
+                         <div class="col-xl-4 d-none">
+                              <div class="card">
+                                   <div class="card-header d-flex justify-content-between align-items-center">
+                                        <h4 class="card-title">Recent Transactions</h4>
+                                        <div>
+                                             <a href="#!" class="btn btn-sm btn-primary">
+                                                  <i class="bx bx-plus me-1"></i>Add
+                                             </a>
+                                        </div>
+                                   </div> <!-- end card-header-->
+                                   <div class="card-body p-0">
+                                        <div class="px-3" data-simplebar style="max-height: 398px;">
+                                             <table class="table table-hover mb-0 table-centered">
+                                                  <tbody>
+                                                       <tr>
+                                                            <td>24 April, 2024</td>
+                                                            <td>$120.55</td>
+                                                            <td><span class="badge bg-success">Cr</span></td>
+                                                            <td>Commisions </td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>24 April, 2024</td>
+                                                            <td>$9.68</td>
+                                                            <td><span class="badge bg-success">Cr</span></td>
+                                                            <td>Affiliates </td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>20 April, 2024</td>
+                                                            <td>$105.22</td>
+                                                            <td><span class="badge bg-danger">Dr</span></td>
+                                                            <td>Grocery </td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>18 April, 2024</td>
+                                                            <td>$80.59</td>
+                                                            <td><span class="badge bg-success">Cr</span></td>
+                                                            <td>Refunds </td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>18 April, 2024</td>
+                                                            <td>$750.95</td>
+                                                            <td><span class="badge bg-danger">Dr</span></td>
+                                                            <td>Bill Payments </td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>17 April, 2024</td>
+                                                            <td>$455.62</td>
+                                                            <td><span class="badge bg-danger">Dr</span></td>
+                                                            <td>Electricity </td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>17 April, 2024</td>
+                                                            <td>$102.77</td>
+                                                            <td><span class="badge bg-success">Cr</span></td>
+                                                            <td>Interest </td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>16 April, 2024</td>
+                                                            <td>$79.49</td>
+                                                            <td><span class="badge bg-success">Cr</span></td>
+                                                            <td>Refunds </td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>05 April, 2024</td>
+                                                            <td>$980.00</td>
+                                                            <td><span class="badge bg-danger">Dr</span></td>
+                                                            <td>Shopping</td>
+                                                       </tr>
+                                                  </tbody>
+                                             </table>
+                                        </div>
+                                   </div> <!-- end card body -->
+                              </div> <!-- end card-->
+                         </div> <!-- end col-->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                         <div class="col">
+                              <div class="card">
+                                   <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                             <h4 class="card-title">
+                                                  Recent Orders
+                                             </h4>
+
+                                             <a href="#!" class="btn btn-sm btn-soft-primary">
+                                                  <i class="bx bx-plus me-1"></i>Create Order
+                                             </a>
+                                        </div>
+                                   </div>
+                                   <!-- end card body -->
+                                   <div class="table-responsive table-centered">
+                                        <table class="table mb-0">
+                                             <thead class="bg-light bg-opacity-50">
+                                                  <tr>
+                                                       <th class="ps-3">
+                                                            Order ID.
+                                                       </th>
+                                                       <th>
+                                                            Date
+                                                       </th>
+                                                       <th>
+                                                            Product
+                                                       </th>
+                                                       <th>
+                                                            Customer Name
+                                                       </th>
+                                                       <th>
+                                                            Email ID
+                                                       </th>
+                                                       <th>
+                                                            Phone No.
+                                                       </th>
+                                                       <th>
+                                                            Address
+                                                       </th>
+                                                       <th>
+                                                            Payment Type
+                                                       </th>
+                                                       <th>
+                                                            Status
+                                                       </th>
+                                                  </tr>
+                                             </thead>
+                                             <!-- end thead-->
+                                             <tbody>
+                                                  <tr>
+                                                       <td class="ps-3">
+                                                            <a href="order-detail.html">#RB5625</a>
+                                                       </td>
+                                                       <td>29 April 2024</td>
+                                                       <td>
+                                                            <img src="assets/images/products/product-1(1).png" alt="product-1(1)" class="img-fluid avatar-sm">
+                                                       </td>
+                                                       <td>
+                                                            <a href="#!">Anna M. Hines</a>
+                                                       </td>
+                                                       <td>anna.hines@mail.com</td>
+                                                       <td>(+1)-555-1564-261</td>
+                                                       <td>Burr Ridge/Illinois</td>
+                                                       <td>Credit Card</td>
+                                                       <td>
+                                                            <i class="bx bxs-circle text-success me-1"></i>Completed
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td class="ps-3">
+                                                            <a href="order-detail.html">#RB9652</a>
+                                                       </td>
+                                                       <td>25 April 2024</td>
+                                                       <td>
+                                                            <img src="assets/images/products/product-4.png" alt="product-4" class="img-fluid avatar-sm">
+                                                       </td>
+                                                       <td>
+                                                            <a href="#!">Judith H. Fritsche</a>
+                                                       </td>
+                                                       <td>judith.fritsche.com</td>
+                                                       <td>(+57)-305-5579-759</td>
+                                                       <td>SULLIVAN/Kentucky</td>
+                                                       <td>Credit Card</td>
+                                                       <td>
+                                                            <i class="bx bxs-circle text-success me-1"></i>Completed
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td class="ps-3">
+                                                            <a href="order-detail.html">#RB5984</a>
+                                                       </td>
+                                                       <td>25 April 2024</td>
+                                                       <td>
+                                                            <img src="assets/images/products/product-5.png" alt="product-5" class="img-fluid avatar-sm">
+                                                       </td>
+                                                       <td>
+                                                            <a href="#!">Peter T. Smith</a>
+                                                       </td>
+                                                       <td>peter.smith@mail.com</td>
+                                                       <td>(+33)-655-5187-93</td>
+                                                       <td>Yreka/California</td>
+                                                       <td>Pay Pal</td>
+                                                       <td>
+                                                            <i class="bx bxs-circle text-success me-1"></i>Completed
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td class="ps-3">
+                                                            <a href="order-detail.html">#RB3625</a>
+                                                       </td>
+                                                       <td>21 April 2024</td>
+                                                       <td>
+                                                            <img src="assets/images/products/product-6.png" alt="product-6" class="img-fluid avatar-sm">
+                                                       </td>
+                                                       <td>
+                                                            <a href="#!">Emmanuel J. Delcid</a>
+                                                       </td>
+                                                       <td>
+                                                            emmanuel.delicid@mail.com
+                                                       </td>
+                                                       <td>(+30)-693-5553-637</td>
+                                                       <td>Atlanta/Georgia</td>
+                                                       <td>Pay Pal</td>
+                                                       <td>
+                                                            <i class="bx bxs-circle text-primary me-1"></i>Processing
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td class="ps-3">
+                                                            <a href="order-detail.html">#RB8652</a>
+                                                       </td>
+                                                       <td>18 April 2024</td>
+                                                       <td>
+                                                            <img src="assets/images/products/product-1(2).png" alt="product-1(2)" class="img-fluid avatar-sm">
+                                                       </td>
+                                                       <td>
+                                                            <a href="#!">William J. Cook</a>
+                                                       </td>
+                                                       <td>william.cook@mail.com</td>
+                                                       <td>(+91)-855-5446-150</td>
+                                                       <td>Rosenberg/Texas</td>
+                                                       <td>Credit Card</td>
+                                                       <td>
+                                                            <i class="bx bxs-circle text-primary me-1"></i>Processing
+                                                       </td>
+                                                  </tr>
+                                             </tbody>
+                                             <!-- end tbody -->
+                                        </table>
+                                        <!-- end table -->
+                                   </div>
+                                   <!-- table responsive -->
+
+                                   <div class="card-footer border-top">
+                                        <div class="row g-3">
+                                             <div class="col-sm">
+                                                  <div class="text-muted">
+                                                       Showing
+                                                       <span class="fw-semibold">5</span>
+                                                       of
+                                                       <span class="fw-semibold">90,521</span>
+                                                       orders
+                                                  </div>
+                                             </div>
+
+                                             <div class="col-sm-auto">
+                                                  <ul class="pagination m-0">
+                                                       <li class="page-item">
+                                                            <a href="#" class="page-link"><i class="bx bx-left-arrow-alt"></i></a>
+                                                       </li>
+                                                       <li class="page-item active">
+                                                            <a href="#" class="page-link">1</a>
+                                                       </li>
+                                                       <li class="page-item">
+                                                            <a href="#" class="page-link">2</a>
+                                                       </li>
+                                                       <li class="page-item">
+                                                            <a href="#" class="page-link">3</a>
+                                                       </li>
+                                                       <li class="page-item">
+                                                            <a href="#" class="page-link"><i class="bx bx-right-arrow-alt"></i></a>
+                                                       </li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- end card -->
+                         </div>
+                         <!-- end col -->
+                    </div> <!-- end row -->
+
+               </div>
+               <!-- End Container Fluid -->
+
+         @include('Dashboard.Parth.footer')
+          <!-- END Content Area -->    

@@ -1,33 +1,40 @@
-  <div class="sa-app__footer d-block d-md-flex"><!-- copyright -->Stroyka Admin — eCommerce Dashboard Template
-                © 2021<div class="m-auto"></div>
-                <div>Powered by HTML — Design by <a href="https://themeforest.net/user/kos9/portfolio">Kos</a></div>
-                <!-- copyright / end -->
-            </div><!-- sa-app__footer / end -->
-        </div><!-- sa-app__content / end --><!-- sa-app__toasts -->
-        <div class="sa-app__toasts toast-container bottom-0 end-0">
-        </div><!-- sa-app__toasts / end -->
-    </div><!-- sa-app / end --><!-- scripts -->
-    <script src="{{asset('dashboard/vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('dashboard/vendor/feather-icons/feather.min.js')}}"></script>
-    <script src="{{asset('dashboard/vendor/simplebar/simplebar.min.js')}}"></script>
-    <script src="{{asset('dashboard/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('dashboard/vendor/highlight.js/highlight.pack.js')}}"></script>
-    <script src="{{asset('dashboard/vendor/quill/quill.min.js')}}"></script>
-    <script src="{{asset('dashboard/vendor/air-datepicker/js/datepicker.min.js')}}"></script>
-    <script src="{{asset('dashboard/vendor/air-datepicker/js/i18n/datepicker.en.js')}}"></script>
-    <script src="{{asset('dashboard/vendor/select2/js/select2.min.js')}}"></script>
-    <script src="{{asset('dashboard/vendor/fontawesome/js/all.min.js')}}" data-auto-replace-svg="" async=""></script>
-    <script src="{{asset('dashboard/vendor/chart.js/chart.min.js')}}"></script>
-    <script src="{{asset('dashboard/vendor/datatables/js/jquery.dataTables.min.js')}}"></script>
-    <script src="{{asset('dashboard/vendor/datatables/js/dataTables.bootstrap5.min.js')}}"></script>
-    <script src="{{asset('dashboard/vendor/nouislider/nouislider.min.js')}}"></script>
-    <script src="{{asset('dashboard/vendor/fullcalendar/main.min.js')}}"></script>
-    <script src="{{asset('dashboard/js/stroyka.js')}}"></script>
-    <script src="{{asset('dashboard/js/custom.js')}}"></script>
-    <script src="{{asset('dashboard/js/calendar.js')}}"></script>
-    <script src="{{asset('dashboard/js/demo.js')}}"></script>
-    <script src="{{asset('dashboard/js/demo-chart-js.js')}}"></script>
-</body>
-<!-- Mirrored from stroyka-admin.html.themeforest.scompiler.ru/variants/ltr/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Dec 2025 16:05:39 GMT -->
+  <!-- ========== Footer Start ========== -->
+               <footer class="footer">
+                   <div class="container-fluid">
+                       <div class="row">
+                           <div class="col-12 text-center">
+                               <script>document.write(new Date().getFullYear())</script> &copy; Larkon. Crafted by <iconify-icon icon="iconamoon:heart-duotone" class="fs-18 align-middle text-danger"></iconify-icon> <a
+                                   href="https://1.envato.market/techzaa" class="fw-bold footer-text" target="_blank">Techzaa</a>
+                           </div>
+                       </div>
+                   </div>
+               </footer>
+               <!-- ========== Footer End ========== -->
 
+          </div>
+          <!-- ==================================================== -->
+          <!-- End Page Content -->
+          <!-- ==================================================== -->
+
+     </div>
+     <!-- END Wrapper -->
+
+     <!-- Vendor Javascript (Require in all Page) -->
+     <script src="{{asset('assets/js/vendor.js')}}"></script>
+
+     <!-- App Javascript (Require in all Page) -->
+     <script src="{{asset('assets/js/app.js')}}"></script>
+
+     <!-- Vector Map Js -->
+     <script src="{{asset('assets/vendor/jsvectormap/js/jsvectormap.min.js')}}"></script>
+     <script src="{{asset('assets/vendor/jsvectormap/maps/world-merc.js')}}"></script>
+     <script src="{{asset('assets/vendor/jsvectormap/maps/world.js')}}"></script>
+
+     <!-- Dashboard Js -->
+     <script src="{{asset('assets/js/pages/dashboard.js')}}"></script>
+
+</body>
+
+
+<!-- Mirrored from techzaa.in/larkon/admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Dec 2025 15:55:07 GMT -->
 </html>
