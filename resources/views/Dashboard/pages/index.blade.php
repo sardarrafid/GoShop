@@ -272,7 +272,7 @@
                                                        </div> <!-- end col -->
                                                        <div class="col-6 text-end">
                                                             <p class="text-muted mb-0 text-truncate">Total Orders</p>
-                                                            <h3 class="text-dark mt-1 mb-0">13, 647</h3>
+                                                            <h3 class="text-dark mt-1 mb-0">1</h3>
                                                        </div> <!-- end col -->
                                                   </div> <!-- end row-->
                                              </div> <!-- end card body -->
@@ -298,7 +298,7 @@
                                                        </div> <!-- end col -->
                                                        <div class="col-6 text-end">
                                                             <p class="text-muted mb-0 text-truncate">New Leads</p>
-                                                            <h3 class="text-dark mt-1 mb-0">9, 526</h3>
+                                                            <h3 class="text-dark mt-1 mb-0">2</h3>
                                                        </div> <!-- end col -->
                                                   </div> <!-- end row-->
                                              </div> <!-- end card body -->
@@ -324,7 +324,7 @@
                                                        </div> <!-- end col -->
                                                        <div class="col-6 text-end">
                                                             <p class="text-muted mb-0 text-truncate">Deals</p>
-                                                            <h3 class="text-dark mt-1 mb-0">976</h3>
+                                                            <h3 class="text-dark mt-1 mb-0">3</h3>
                                                        </div> <!-- end col -->
                                                   </div> <!-- end row-->
                                              </div> <!-- end card body -->
@@ -350,7 +350,7 @@
                                                        </div> <!-- end col -->
                                                        <div class="col-6 text-end">
                                                             <p class="text-muted mb-0 text-truncate">Booked Revenue</p>
-                                                            <h3 class="text-dark mt-1 mb-0">$123.6k</h3>
+                                                            <h3 class="text-dark mt-1 mb-0">20</h3>
                                                        </div> <!-- end col -->
                                                   </div> <!-- end row-->
                                              </div> <!-- end card body -->
@@ -398,11 +398,11 @@
                                         <div class="row text-center">
                                              <div class="col-6">
                                                   <p class="text-muted mb-2">This Week</p>
-                                                  <h3 class="text-dark mb-3">23.5k</h3>
+                                                  <h3 class="text-dark mb-3">1</h3>
                                              </div> <!-- end col -->
                                              <div class="col-6">
                                                   <p class="text-muted mb-2">Last Week</p>
-                                                  <h3 class="text-dark mb-3">41.05k</h3>
+                                                  <h3 class="text-dark mb-3">2</h3>
                                              </div> <!-- end col -->
                                         </div> <!-- end row -->
                                         <div class="text-center">
@@ -421,11 +421,11 @@
                                         <div class="row text-center">
                                              <div class="col-6">
                                                   <p class="text-muted mb-2">This Week</p>
-                                                  <h3 class="text-dark mb-3">23.5k</h3>
+                                                  <h3 class="text-dark mb-3">1</h3>
                                              </div> <!-- end col -->
                                              <div class="col-6">
                                                   <p class="text-muted mb-2">Last Week</p>
-                                                  <h3 class="text-dark mb-3">41.05k</h3>
+                                                  <h3 class="text-dark mb-3">2</h3>
                                              </div> <!-- end col -->
                                         </div> <!-- end row -->
                                    </div>
@@ -449,36 +449,10 @@
                                                   </tr>
                                              </thead>
                                              <tbody>
-                                                  <tr>
-                                                       <td class="ps-3"><a href="#" class="text-muted">larkon/ecommerce.html</a></td>
-                                                       <td>465 </td>
-                                                       <td><span class="badge badge-soft-success">4.4%</span></td>
-                                                  </tr>
-                                                  <tr>
-                                                       <td class="ps-3"><a href="#" class="text-muted">larkon/dashboard.html</a></td>
-                                                       <td> 426</td>
-                                                       <td><span class="badge badge-soft-danger">20.4%</span></td>
-                                                  </tr>
-                                                  <tr>
-                                                       <td class="ps-3"><a href="#" class="text-muted">larkon/chat.html</a></td>
-                                                       <td>254 </td>
-                                                       <td><span class="badge badge-soft-warning">12.25%</span></td>
-                                                  </tr>
-                                                  <tr>
-                                                       <td class="ps-3"><a href="#" class="text-muted">larkon/auth-login.html</a></td>
-                                                       <td> 3369</td>
-                                                       <td><span class="badge badge-soft-success">5.2%</span></td>
-                                                  </tr>
-                                                  <tr>
-                                                       <td class="ps-3"><a href="#" class="text-muted">larkon/email.html</a></td>
-                                                       <td>985 </td>
-                                                       <td><span class="badge badge-soft-danger">64.2%</span></td>
-                                                  </tr>
-                                                  <tr>
-                                                       <td class="ps-3"><a href="#" class="text-muted">larkon/social.html</a></td>
-                                                       <td>653 </td>
-                                                       <td><span class="badge badge-soft-success">2.4%</span></td>
-                                                  </tr>
+                                                 
+                                                 
+                                                  
+                                                  
                                                   <tr>
                                                        <td class="ps-3"><a href="#" class="text-muted">larkon/blog.html</a></td>
                                                        <td>478 </td>
@@ -616,84 +590,7 @@
                                              </thead>
                                              <!-- end thead-->
                                              <tbody>
-                                                  <tr>
-                                                       <td class="ps-3">
-                                                            <a href="order-detail.html">#RB5625</a>
-                                                       </td>
-                                                       <td>29 April 2024</td>
-                                                       <td>
-                                                            <img src="assets/images/products/product-1(1).png" alt="product-1(1)" class="img-fluid avatar-sm">
-                                                       </td>
-                                                       <td>
-                                                            <a href="#!">Anna M. Hines</a>
-                                                       </td>
-                                                       <td>anna.hines@mail.com</td>
-                                                       <td>(+1)-555-1564-261</td>
-                                                       <td>Burr Ridge/Illinois</td>
-                                                       <td>Credit Card</td>
-                                                       <td>
-                                                            <i class="bx bxs-circle text-success me-1"></i>Completed
-                                                       </td>
-                                                  </tr>
-                                                  <tr>
-                                                       <td class="ps-3">
-                                                            <a href="order-detail.html">#RB9652</a>
-                                                       </td>
-                                                       <td>25 April 2024</td>
-                                                       <td>
-                                                            <img src="assets/images/products/product-4.png" alt="product-4" class="img-fluid avatar-sm">
-                                                       </td>
-                                                       <td>
-                                                            <a href="#!">Judith H. Fritsche</a>
-                                                       </td>
-                                                       <td>judith.fritsche.com</td>
-                                                       <td>(+57)-305-5579-759</td>
-                                                       <td>SULLIVAN/Kentucky</td>
-                                                       <td>Credit Card</td>
-                                                       <td>
-                                                            <i class="bx bxs-circle text-success me-1"></i>Completed
-                                                       </td>
-                                                  </tr>
-                                                  <tr>
-                                                       <td class="ps-3">
-                                                            <a href="order-detail.html">#RB5984</a>
-                                                       </td>
-                                                       <td>25 April 2024</td>
-                                                       <td>
-                                                            <img src="assets/images/products/product-5.png" alt="product-5" class="img-fluid avatar-sm">
-                                                       </td>
-                                                       <td>
-                                                            <a href="#!">Peter T. Smith</a>
-                                                       </td>
-                                                       <td>peter.smith@mail.com</td>
-                                                       <td>(+33)-655-5187-93</td>
-                                                       <td>Yreka/California</td>
-                                                       <td>Pay Pal</td>
-                                                       <td>
-                                                            <i class="bx bxs-circle text-success me-1"></i>Completed
-                                                       </td>
-                                                  </tr>
-                                                  <tr>
-                                                       <td class="ps-3">
-                                                            <a href="order-detail.html">#RB3625</a>
-                                                       </td>
-                                                       <td>21 April 2024</td>
-                                                       <td>
-                                                            <img src="assets/images/products/product-6.png" alt="product-6" class="img-fluid avatar-sm">
-                                                       </td>
-                                                       <td>
-                                                            <a href="#!">Emmanuel J. Delcid</a>
-                                                       </td>
-                                                       <td>
-                                                            emmanuel.delicid@mail.com
-                                                       </td>
-                                                       <td>(+30)-693-5553-637</td>
-                                                       <td>Atlanta/Georgia</td>
-                                                       <td>Pay Pal</td>
-                                                       <td>
-                                                            <i class="bx bxs-circle text-primary me-1"></i>Processing
-                                                       </td>
-                                                  </tr>
+                                                  
                                                   <tr>
                                                        <td class="ps-3">
                                                             <a href="order-detail.html">#RB8652</a>

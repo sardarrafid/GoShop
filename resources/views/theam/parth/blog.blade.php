@@ -2,7 +2,7 @@
       @include('theam.layout.layout')  
         <!-- End Offset Wrapper -->
         <!-- Start Bradcaump area -->
-        <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat scroll center center / cover ;">
+        <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url({{asset('theam/images/bg/2.jpg')}}) no-repeat scroll center center / cover ;">
             <div class="ht__bradcaump__wrap">
                 <div class="container">
                     <div class="row">
@@ -26,13 +26,18 @@
             <div class="container">
                 <div class="blog__wrap blog--page clearfix">
                     <div class="row">
+                       
+                        
+                      
+                       
+                        
                         <!-- Start Single Blog -->
                         <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-12">
                             <div class="blog foo">
                                 <div class="blog__inner">
                                     <div class="blog__thumb">
                                         <a href="blog-details.html">
-                                            <img src="images/blog/blog-img/1.jpg" alt="blog images">
+                                            <img src="{{asset('theam/images/blog/blog-img/1.jpg')}}" alt="blog images">
                                         </a>
                                         <div class="blog__post__time">
                                             <div class="post__time--inner">
@@ -57,254 +62,8 @@
                             </div>
                         </div>
                         <!-- End Single Blog -->
-                        <!-- Start Single Blog -->
-                        <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-12">
-                            <div class="blog foo">
-                                <div class="blog__inner">
-                                    <div class="blog__thumb">
-                                        <a href="blog-details.html">
-                                            <img src="images/blog/blog-img/2.jpg" alt="blog images">
-                                        </a>
-                                        <div class="blog__post__time">
-                                            <div class="post__time--inner">
-                                                <span class="date">14</span>
-                                                <span class="month">sep</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog__hover__info">
-                                        <div class="blog__hover__action">
-                                            <p class="blog__des"><a href="blog-details.html">Lorem ipsum dolor sit consectetu.</a></p>
-                                            <ul class="bl__meta">
-                                                <li>By :<a href="#">Admin</a></li>
-                                                <li>Product</li>
-                                            </ul>
-                                            <div class="blog__btn">
-                                                <a class="read__more__btn" href="blog-details.html">read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Blog -->
-                        <!-- Start Single Blog -->
-                        <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-12">
-                            <div class="blog foo">
-                                <div class="blog__inner">
-                                    <div class="blog__thumb">
-                                        <a href="blog-details.html">
-                                            <img src="images/blog/blog-img/3.jpg" alt="blog images">
-                                        </a>
-                                        <div class="blog__post__time">
-                                            <div class="post__time--inner">
-                                                <span class="date">14</span>
-                                                <span class="month">sep</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog__hover__info">
-                                        <div class="blog__hover__action">
-                                            <p class="blog__des"><a href="blog-details.html">Lorem ipsum dolor sit consectetu.</a></p>
-                                            <ul class="bl__meta">
-                                                <li>By :<a href="#">Admin</a></li>
-                                                <li>Product</li>
-                                            </ul>
-                                            <div class="blog__btn">
-                                                <a class="read__more__btn" href="blog-details.html">read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Blog -->
-                        <!-- Start Single Blog -->
-                        <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-12">
-                            <div class="blog foo">
-                                <div class="blog__inner">
-                                    <div class="blog__thumb">
-                                        <a href="blog-details.html">
-                                            <img src="images/blog/blog-img/3.jpg" alt="blog images">
-                                        </a>
-                                        <div class="blog__post__time">
-                                            <div class="post__time--inner">
-                                                <span class="date">14</span>
-                                                <span class="month">sep</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog__hover__info">
-                                        <div class="blog__hover__action">
-                                            <p class="blog__des"><a href="blog-details.html">Lorem ipsum dolor sit consectetu.</a></p>
-                                            <ul class="bl__meta">
-                                                <li>By :<a href="#">Admin</a></li>
-                                                <li>Product</li>
-                                            </ul>
-                                            <div class="blog__btn">
-                                                <a class="read__more__btn" href="blog-details.html">read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Blog -->
-                        <!-- Start Single Blog -->
-                        <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-12">
-                            <div class="blog foo">
-                                <div class="blog__inner">
-                                    <div class="blog__thumb">
-                                        <a href="blog-details.html">
-                                            <img src="images/blog/blog-img/2.jpg" alt="blog images">
-                                        </a>
-                                        <div class="blog__post__time">
-                                            <div class="post__time--inner">
-                                                <span class="date">14</span>
-                                                <span class="month">sep</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog__hover__info">
-                                        <div class="blog__hover__action">
-                                            <p class="blog__des"><a href="blog-details.html">Lorem ipsum dolor sit consectetu.</a></p>
-                                            <ul class="bl__meta">
-                                                <li>By :<a href="#">Admin</a></li>
-                                                <li>Product</li>
-                                            </ul>
-                                            <div class="blog__btn">
-                                                <a class="read__more__btn" href="blog-details.html">read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Blog -->
-                        <!-- Start Single Blog -->
-                        <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-12">
-                            <div class="blog foo">
-                                <div class="blog__inner">
-                                    <div class="blog__thumb">
-                                        <a href="blog-details.html">
-                                            <img src="images/blog/blog-img/1.jpg" alt="blog images">
-                                        </a>
-                                        <div class="blog__post__time">
-                                            <div class="post__time--inner">
-                                                <span class="date">14</span>
-                                                <span class="month">sep</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog__hover__info">
-                                        <div class="blog__hover__action">
-                                            <p class="blog__des"><a href="blog-details.html">Lorem ipsum dolor sit consectetu.</a></p>
-                                            <ul class="bl__meta">
-                                                <li>By :<a href="#">Admin</a></li>
-                                                <li>Product</li>
-                                            </ul>
-                                            <div class="blog__btn">
-                                                <a class="read__more__btn" href="blog-details.html">read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Blog -->
-                        <!-- Start Single Blog -->
-                        <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-12">
-                            <div class="blog foo">
-                                <div class="blog__inner">
-                                    <div class="blog__thumb">
-                                        <a href="blog-details.html">
-                                            <img src="images/blog/blog-img/2.jpg" alt="blog images">
-                                        </a>
-                                        <div class="blog__post__time">
-                                            <div class="post__time--inner">
-                                                <span class="date">14</span>
-                                                <span class="month">sep</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog__hover__info">
-                                        <div class="blog__hover__action">
-                                            <p class="blog__des"><a href="blog-details.html">Lorem ipsum dolor sit consectetu.</a></p>
-                                            <ul class="bl__meta">
-                                                <li>By :<a href="#">Admin</a></li>
-                                                <li>Product</li>
-                                            </ul>
-                                            <div class="blog__btn">
-                                                <a class="read__more__btn" href="blog-details.html">read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Blog -->
-                        <!-- Start Single Blog -->
-                        <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-12">
-                            <div class="blog foo">
-                                <div class="blog__inner">
-                                    <div class="blog__thumb">
-                                        <a href="blog-details.html">
-                                            <img src="images/blog/blog-img/3.jpg" alt="blog images">
-                                        </a>
-                                        <div class="blog__post__time">
-                                            <div class="post__time--inner">
-                                                <span class="date">14</span>
-                                                <span class="month">sep</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog__hover__info">
-                                        <div class="blog__hover__action">
-                                            <p class="blog__des"><a href="blog-details.html">Lorem ipsum dolor sit consectetu.</a></p>
-                                            <ul class="bl__meta">
-                                                <li>By :<a href="#">Admin</a></li>
-                                                <li>Product</li>
-                                            </ul>
-                                            <div class="blog__btn">
-                                                <a class="read__more__btn" href="blog-details.html">read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Blog -->
-                        <!-- Start Single Blog -->
-                        <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-12">
-                            <div class="blog foo">
-                                <div class="blog__inner">
-                                    <div class="blog__thumb">
-                                        <a href="blog-details.html">
-                                            <img src="images/blog/blog-img/1.jpg" alt="blog images">
-                                        </a>
-                                        <div class="blog__post__time">
-                                            <div class="post__time--inner">
-                                                <span class="date">14</span>
-                                                <span class="month">sep</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog__hover__info">
-                                        <div class="blog__hover__action">
-                                            <p class="blog__des"><a href="blog-details.html">Lorem ipsum dolor sit consectetu.</a></p>
-                                            <ul class="bl__meta">
-                                                <li>By :<a href="#">Admin</a></li>
-                                                <li>Product</li>
-                                            </ul>
-                                            <div class="blog__btn">
-                                                <a class="read__more__btn" href="blog-details.html">read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Blog -->
+                        
+                        
                     </div>
                 </div>
                 <!-- Start Load More BTn -->

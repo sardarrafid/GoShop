@@ -21,14 +21,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td class="product-remove"><a href="#">×</a></td>
-                                                <td class="product-thumbnail"><a href="#"><img src="images/product/4.png" alt="" /></a></td>
-                                                <td class="product-name"><a href="#">Vestibulum suscipit</a></td>
-                                                <td class="product-price"><span class="amount">£165.00</span></td>
-                                                <td class="product-stock-status"><span class="wishlist-in-stock">In Stock</span></td>
-                                                <td class="product-add-to-cart"><a href="#"> Add to Cart</a></td>
-                                            </tr>
+                                           
                                             <tr>
                                                 <td class="product-remove"><a href="#">×</a></td>
                                                 <td class="product-thumbnail"><a href="#"><img src="images/product/5.png" alt="" /></a></td>

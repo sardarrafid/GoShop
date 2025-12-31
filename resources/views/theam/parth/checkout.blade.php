@@ -68,11 +68,11 @@
                             <div class="our-payment-sestem">
                                 <h2 class="section-title-3">We  Accept :</h2>
                                 <ul class="payment-menu">
-                                    <li><a href="#"><img src="images/payment/1.jpg" alt="payment-img"></a></li>
-                                    <li><a href="#"><img src="images/payment/2.jpg" alt="payment-img"></a></li>
-                                    <li><a href="#"><img src="images/payment/3.jpg" alt="payment-img"></a></li>
-                                    <li><a href="#"><img src="images/payment/4.jpg" alt="payment-img"></a></li>
-                                    <li><a href="#"><img src="images/payment/5.jpg" alt="payment-img"></a></li>
+                                    <li><a href="#"><img src="{{asset('theam/images/payment/1.jpg')}}" alt="payment-img"></a></li>
+                                    <li><a href="#"><img src="{{asset('theam/images/payment/2.jpg')}}" alt="payment-img"></a></li>
+                                    <li><a href="#"><img src="{{asset('theam/images/payment/3.jpg')}}" alt="payment-img"></a></li>
+                                    <li><a href="#"><img src="{{asset('theam/images/payment/4.jpg')}}" alt="payment-img"></a></li>
+                                    <li><a href="#"><img src="{{asset('theam/images/payment/5.jpg')}}" alt="payment-img"></a></li>
                                 </ul>
                                 <div class="checkout-btn">
                                     <a class="ts-btn btn-light btn-large hover-theme" href="#">CONFIRM & BUY NOW</a>

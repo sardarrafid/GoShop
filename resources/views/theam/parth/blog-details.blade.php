@@ -1,7 +1,7 @@
 
 @include('theam.layout.layout')
         <!-- Start Bradcaump area -->
-        <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat scroll center center / cover ;">
+        <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url({{asset('theam/images/bg/2.jpg')}}) no-repeat scroll center center / cover ;">
             <div class="ht__bradcaump__wrap">
                 <div class="container">
                     <div class="row">
@@ -30,7 +30,7 @@
                                 <!--Start Blog Thumb -->
                                 <div class="blog-details-thumb-wrap">
                                     <div class="blog-details-thumb">
-                                        <img src="images/blog/big-images/1.jpg" alt="blog images">
+                                        <img src="{{asset('theam/images/blog/big-images/1.jpg')}}" alt="blog images">
                                     </div>
                                     <div class="upcoming-date">
                                         14<span class="upc-mth">Sep,2017</span>
@@ -72,42 +72,11 @@
                                 <div class="our-blog-comment mt--20">
                                     <div class="blog-comment-inner">
                                         <h2 class="section-title-2">COMMENTS (03)</h2>
+                                       
                                         <!-- Start Single Comment -->
                                         <div class="single-blog-comment">
                                             <div class="blog-comment-thumb">
-                                                <img src="images/comment/1.jpg" alt="comment images">
-                                            </div>
-                                            <div class="blog-comment-details">
-                                                <div class="comment-title-date">
-                                                    <h2><a href="#">Martin Payet</a></h2>
-                                                    <div class="reply">
-                                                        <p>14 Sep 2022 / <a href="#">REPLY</a></p>
-                                                    </div>
-                                                </div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi ut labore et dolo magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Comment -->
-                                        <!-- Start Single Comment -->
-                                        <div class="single-blog-comment comment-reply">
-                                            <div class="blog-comment-thumb">
-                                                <img src="images/comment/2.jpg" alt="comment images">
-                                            </div>
-                                            <div class="blog-comment-details">
-                                                <div class="comment-title-date">
-                                                    <h2><a href="#">Martin Payet</a></h2>
-                                                    <div class="reply">
-                                                        <p>14 Sep 2022 / <a href="#">REPLY</a></p>
-                                                    </div>
-                                                </div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi ut labore et dolo magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Comment -->
-                                        <!-- Start Single Comment -->
-                                        <div class="single-blog-comment">
-                                            <div class="blog-comment-thumb">
-                                                <img src="images/comment/3.jpg" alt="comment images">
+                                                <img src="{{asset('theam/images/comment/3.jpg')}}" alt="comment images">
                                             </div>
                                             <div class="blog-comment-details">
                                                 <div class="comment-title-date">
@@ -160,10 +129,7 @@
                                 <h2 class="section-title-2">CATEGORY</h2>
                                 <ul class="categore-menu">
                                     <li><a href="#"><i class="zmdi zmdi-caret-right"></i>BLOG <span>20</span></a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-caret-right"></i>business <span>40</span></a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-caret-right"></i>DESIGN <span>60</span></a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-caret-right"></i>BRANDING <span>70</span></a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-caret-right"></i>ANTHONY <span>80</span></a></li>
+                                    
                                 </ul>
                             </div>
                             <!-- End Category Area -->
@@ -171,44 +137,13 @@
                             <div class="our-recent-post mt--60">
                                 <h2 class="section-title-2">LATEST POST</h2>
                                 <div class="our-recent-post-wrap">
+                                    
+                                    
                                     <!-- Start Single Post -->
                                     <div class="single-recent-post">
                                         <div class="recent-thumb">
-                                            <a href="blog-details.html"><img src="images/blog/sm-img/1.jpg" alt="post images"></a>
-                                        </div>
-                                        <div class="recent-details">
-                                            <div class="recent-post-dtl">
-                                                <h6><a href="blog-details.html">Lorem ipsum dolor sit amet, consectetu adipisicing elit, sed do.</a></h6>
-                                            </div>
-                                            <div class="recent-post-time">
-                                                <p>14 SEP 2022</p>
-                                                <p class="separator">|</p>
-                                                <p>5 : 00 PM</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Post -->
-                                    <!-- Start Single Post -->
-                                    <div class="single-recent-post">
-                                        <div class="recent-thumb">
-                                            <a href="blog-details.html"><img src="images/blog/sm-img/2.jpg" alt="post images"></a>
-                                        </div>
-                                        <div class="recent-details">
-                                            <div class="recent-post-dtl">
-                                                <h6><a href="blog-details.html">Lorem ipsum dolor sit amet, consectetu adipisicing elit, sed do.</a></h6>
-                                            </div>
-                                            <div class="recent-post-time">
-                                                <p>14 SEP 2022</p>
-                                                <p class="separator">|</p>
-                                                <p>5 : 00 PM</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Post -->
-                                    <!-- Start Single Post -->
-                                    <div class="single-recent-post">
-                                        <div class="recent-thumb">
-                                            <a href="blog-details.html"><img src="images/blog/sm-img/3.jpg" alt="post images"></a>
+                                            <a href="blog-details.html">
+                                            <img src="{{asset('theam/images/blog/sm-img/3.jpg')}}" alt="post images"></a>
                                         </div>
                                         <div class="recent-details">
                                             <div class="recent-post-dtl">
@@ -230,11 +165,7 @@
                                 <h2 class="section-title-2">TAGS</h2>
                                 <ul class="tag-menu mt-40">
                                     <li><a href="#">Planning</a></li>
-                                    <li><a href="#">Consulting</a></li>
-                                    <li><a href="#">Investment</a></li>
-                                    <li><a href="#">Investment</a></li>
-                                    <li><a href="#">planning</a></li>
-                                    <li><a href="#">Management</a></li>
+                                    
                                 </ul>
                             </div>
                             <!-- End Tag -->

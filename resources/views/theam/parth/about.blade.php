@@ -1,6 +1,6 @@
         @include('theam.layout.layout')
         <!-- Start Bradcaump area -->
-        <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat scroll center center / cover ;">
+        <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url({{asset('theam/images/bg/2.jpg')}}) no-repeat scroll center center / cover ;">
             <div class="ht__bradcaump__wrap">
                 <div class="container">
                     <div class="row">
@@ -113,58 +113,14 @@
                 </div>
                 <div class="team__wrap clearfix mt--60">
                     <div class="row">
-                        <!-- Start Single Team -->
-                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12">
-                            <div class="team foo">
-                                <div class="team__thumb">
-                                    <a href="#">
-                                        <img src="images/team/1.jpg" alt="team images">
-                                    </a>
-                                </div>
-                                <div class="team__bg__color"></div>
-                                <div class="team__hover__info">
-                                    <div class="team__hover__action">
-                                        <h2><a href="#">Robiul siddikee</a></h2>
-                                        <ul class="social__icon">
-                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
-                                            <li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
-                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
-                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Team -->
+                       
+                       
                         <!-- Start Single Team -->
                         <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12 xmt-30 mrg-none-sm">
                             <div class="team foo">
                                 <div class="team__thumb">
                                     <a href="#">
-                                        <img src="images/team/2.jpg" alt="team images">
-                                    </a>
-                                </div>
-                                <div class="team__bg__color"></div>
-                                <div class="team__hover__info">
-                                    <div class="team__hover__action">
-                                        <h2><a href="#">Robiul siddikee</a></h2>
-                                        <ul class="social__icon">
-                                            <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
-                                            <li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
-                                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
-                                            <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Team -->
-                        <!-- Start Single Team -->
-                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6 col-12 xmt-30 mrg-none-sm">
-                            <div class="team foo">
-                                <div class="team__thumb">
-                                    <a href="#">
-                                        <img src="images/team/4.jpg" alt="team images">
+                                        <img src="{{asset('theam/images/team/4.jpg')}}" alt="team images">
                                     </a>
                                 </div>
                                 <div class="team__bg__color"></div>
@@ -188,7 +144,7 @@
         </section>
         <!-- End Our Team Area -->
         <!-- Start Testimonial Area -->
-        <div class="htc__testimonial__area ptb--120" style="background: rgba(0, 0, 0, 0) url(images/bg/4.jpg) no-repeat scroll center center / cover ;" data--black__overlay="6">
+        <div class="htc__testimonial__area ptb--120" style="background: rgba(0, 0, 0, 0) url({{asset('theam/images/bg/4.jpg')}}) no-repeat scroll center center / cover ;" data--black__overlay="6">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-xl-12 col-md-12 col-12">
@@ -196,7 +152,7 @@
                             <!-- Start Single Testimonial -->
                             <div class="testimonial">
                                 <div class="testimonial__thumb">
-                                    <img src="images/test/client/1.png" alt="testimonial images">
+                                    <img src="{{asset('theam/images/test/client/1.png')}}" alt="testimonial images">
                                 </div>
                                 <div class="testimonial__details">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod teincidi dunt ut labore et dolore gna aliqua. Ut enim ad minim veniam,</p>
@@ -211,7 +167,7 @@
                             <!-- Start Single Testimonial -->
                             <div class="testimonial">
                                 <div class="testimonial__thumb">
-                                    <img src="images/test/client/2.png" alt="testimonial images">
+                                    <img src="{{asset('theam/images/test/client/2.png')}}" alt="testimonial images">
                                 </div>
                                 <div class="testimonial__details">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod teincidi dunt ut labore et dolore gna aliqua. Ut enim ad minim veniam,</p>
@@ -226,7 +182,7 @@
                             <!-- Start Single Testimonial -->
                             <div class="testimonial">
                                 <div class="testimonial__thumb">
-                                    <img src="images/test/client/3.png" alt="testimonial images">
+                                <img src="{{asset('theam/images/test/client/3.png')}}" alt="testimonial images">
                                 </div>
                                 <div class="testimonial__details">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod teincidi dunt ut labore et dolore gna aliqua. Ut enim ad minim veniam,</p>
@@ -251,20 +207,9 @@
                     <div class="col-lg-12">
                         <ul class="brand__list">
                             <li><a href="#">
-                                <img src="images/brand/1.png" alt="brand images">
+                                <img src="{{asset('theam/images/brand/1.png')}}" alt="brand images">
                             </a></li>
-                            <li><a href="#">
-                                <img src="images/brand/2.png" alt="brand images">
-                            </a></li>
-                            <li><a href="#">
-                                <img src="images/brand/3.png" alt="brand images">
-                            </a></li>
-                            <li><a href="#">
-                                <img src="images/brand/4.png" alt="brand images">
-                            </a></li>
-                            <li class="hidden-sm"><a href="#">
-                                <img src="images/brand/5.png" alt="brand images">
-                            </a></li>
+                            
                         </ul>
                     </div>
                 </div>
