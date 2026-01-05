@@ -21,6 +21,9 @@
      <!-- Icons css (Require in all Page) -->
      <link href="{{ asset('assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
 
+  
+
+
      <!-- App css (Require in all Page) -->
      <link href="{{ asset('assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
 

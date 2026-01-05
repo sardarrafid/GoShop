@@ -368,176 +368,7 @@
                               </div> <!-- end row -->
                          </div> <!-- end col -->
 
-                         <div class="col-xxl-7">
-                              <div class="card">
-                                   <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                             <h4 class="card-title">Performance</h4>
-                                             <div>
-                                                  <button type="button" class="btn btn-sm btn-outline-light">ALL</button>
-                                                  <button type="button" class="btn btn-sm btn-outline-light">1M</button>
-                                                  <button type="button" class="btn btn-sm btn-outline-light">6M</button>
-                                                  <button type="button" class="btn btn-sm btn-outline-light active">1Y</button>
-                                             </div>
-                                        </div> <!-- end card-title-->
-
-                                        <div dir="ltr">
-                                             <div id="dash-performance-chart" class="apex-charts"></div>
-                                        </div>
-                                   </div> <!-- end card body -->
-                              </div> <!-- end card -->
-                         </div> <!-- end col -->
-                    </div> <!-- end row -->
-
-                    <div class="row">
-                         <div class="col-lg-4">
-                              <div class="card">
-                                   <div class="card-body">
-                                        <h5 class="card-title">Conversions</h5>
-                                        <div id="conversions" class="apex-charts mb-2 mt-n2"></div>
-                                        <div class="row text-center">
-                                             <div class="col-6">
-                                                  <p class="text-muted mb-2">This Week</p>
-                                                  <h3 class="text-dark mb-3">1</h3>
-                                             </div> <!-- end col -->
-                                             <div class="col-6">
-                                                  <p class="text-muted mb-2">Last Week</p>
-                                                  <h3 class="text-dark mb-3">2</h3>
-                                             </div> <!-- end col -->
-                                        </div> <!-- end row -->
-                                        <div class="text-center">
-                                             <button type="button" class="btn btn-light shadow-none w-100">View Details</button>
-                                        </div> <!-- end row -->
-                                   </div>
-                              </div>
-                         </div> <!-- end left chart card -->
-
-                         <div class="col-lg-4">
-                              <div class="card">
-                                   <div class="card-body">
-                                        <h5 class="card-title">Sessions by Country</h5>
-                                        <div id="world-map-markers" style="height: 316px">
-                                        </div>
-                                        <div class="row text-center">
-                                             <div class="col-6">
-                                                  <p class="text-muted mb-2">This Week</p>
-                                                  <h3 class="text-dark mb-3">1</h3>
-                                             </div> <!-- end col -->
-                                             <div class="col-6">
-                                                  <p class="text-muted mb-2">Last Week</p>
-                                                  <h3 class="text-dark mb-3">2</h3>
-                                             </div> <!-- end col -->
-                                        </div> <!-- end row -->
-                                   </div>
-                              </div> <!-- end card-->
-                         </div> <!-- end col -->
-
-                         <div class="col-lg-4">
-                              <div class="card card-height-100">
-                                   <div class="card-header d-flex align-items-center justify-content-between gap-2">
-                                        <h4 class="card-title flex-grow-1">Top Pages</h4>
-
-                                        <a href="#" class="btn btn-sm btn-soft-primary">View All</a>
-                                   </div>
-                                   <div class="table-responsive">
-                                        <table class="table table-hover table-nowrap table-centered m-0">
-                                             <thead class="bg-light bg-opacity-50">
-                                                  <tr>
-                                                       <th class="text-muted ps-3">Page Path</th>
-                                                       <th class="text-muted">Page Views</th>
-                                                       <th class="text-muted">Exit Rate</th>
-                                                  </tr>
-                                             </thead>
-                                             <tbody>
-                                                 
-                                                 
-                                                  
-                                                  
-                                                  <tr>
-                                                       <td class="ps-3"><a href="#" class="text-muted">larkon/blog.html</a></td>
-                                                       <td>478 </td>
-                                                       <td><span class="badge badge-soft-danger">1.4%</span></td>
-                                                  </tr>
-                                             </tbody>
-                                        </table>
-                                   </div>
-                              </div>
-                         </div> <!-- end col -->
-
-                         <div class="col-xl-4 d-none">
-                              <div class="card">
-                                   <div class="card-header d-flex justify-content-between align-items-center">
-                                        <h4 class="card-title">Recent Transactions</h4>
-                                        <div>
-                                             <a href="#!" class="btn btn-sm btn-primary">
-                                                  <i class="bx bx-plus me-1"></i>Add
-                                             </a>
-                                        </div>
-                                   </div> <!-- end card-header-->
-                                   <div class="card-body p-0">
-                                        <div class="px-3" data-simplebar style="max-height: 398px;">
-                                             <table class="table table-hover mb-0 table-centered">
-                                                  <tbody>
-                                                       <tr>
-                                                            <td>24 April, 2024</td>
-                                                            <td>$120.55</td>
-                                                            <td><span class="badge bg-success">Cr</span></td>
-                                                            <td>Commisions </td>
-                                                       </tr>
-                                                       <tr>
-                                                            <td>24 April, 2024</td>
-                                                            <td>$9.68</td>
-                                                            <td><span class="badge bg-success">Cr</span></td>
-                                                            <td>Affiliates </td>
-                                                       </tr>
-                                                       <tr>
-                                                            <td>20 April, 2024</td>
-                                                            <td>$105.22</td>
-                                                            <td><span class="badge bg-danger">Dr</span></td>
-                                                            <td>Grocery </td>
-                                                       </tr>
-                                                       <tr>
-                                                            <td>18 April, 2024</td>
-                                                            <td>$80.59</td>
-                                                            <td><span class="badge bg-success">Cr</span></td>
-                                                            <td>Refunds </td>
-                                                       </tr>
-                                                       <tr>
-                                                            <td>18 April, 2024</td>
-                                                            <td>$750.95</td>
-                                                            <td><span class="badge bg-danger">Dr</span></td>
-                                                            <td>Bill Payments </td>
-                                                       </tr>
-                                                       <tr>
-                                                            <td>17 April, 2024</td>
-                                                            <td>$455.62</td>
-                                                            <td><span class="badge bg-danger">Dr</span></td>
-                                                            <td>Electricity </td>
-                                                       </tr>
-                                                       <tr>
-                                                            <td>17 April, 2024</td>
-                                                            <td>$102.77</td>
-                                                            <td><span class="badge bg-success">Cr</span></td>
-                                                            <td>Interest </td>
-                                                       </tr>
-                                                       <tr>
-                                                            <td>16 April, 2024</td>
-                                                            <td>$79.49</td>
-                                                            <td><span class="badge bg-success">Cr</span></td>
-                                                            <td>Refunds </td>
-                                                       </tr>
-                                                       <tr>
-                                                            <td>05 April, 2024</td>
-                                                            <td>$980.00</td>
-                                                            <td><span class="badge bg-danger">Dr</span></td>
-                                                            <td>Shopping</td>
-                                                       </tr>
-                                                  </tbody>
-                                             </table>
-                                        </div>
-                                   </div> <!-- end card body -->
-                              </div> <!-- end card-->
-                         </div> <!-- end col-->
+                         
                     </div> <!-- end row -->
 
                     <div class="row">
@@ -549,9 +380,7 @@
                                                   Recent Orders
                                              </h4>
 
-                                             <a href="#!" class="btn btn-sm btn-soft-primary">
-                                                  <i class="bx bx-plus me-1"></i>Create Order
-                                             </a>
+                                             
                                         </div>
                                    </div>
                                    <!-- end card body -->
@@ -632,7 +461,8 @@
                                              <div class="col-sm-auto">
                                                   <ul class="pagination m-0">
                                                        <li class="page-item">
-                                                            <a href="#" class="page-link"><i class="bx bx-left-arrow-alt"></i></a>
+                                                            <a href="#" class="page-link">
+                                                            <i class="bx bx-left-arrow-alt"></i></a>
                                                        </li>
                                                        <li class="page-item active">
                                                             <a href="#" class="page-link">1</a>

@@ -11,7 +11,7 @@
 
                               <!-- Menu Toggle Button -->
                               <div class="topbar-item">
-                                   <h4 class="fw-bold topbar-button pe-none text-uppercase mb-0">Welcome!</h4>
+                                   <h4 class="fw-bold topbar-button pe-none text-uppercase mb-0">Welcome! {{ Auth::user()->name }}</h4>
                               </div>
                          </div>
 
@@ -44,7 +44,7 @@
                                    </a>
                                    <div class="dropdown-menu dropdown-menu-end">
                                         <!-- item-->
-                                        <h6 class="dropdown-header">Welcome Gaston!</h6>
+                                        <h6 class="dropdown-header">Welcome {{ Auth::user()->name }}</h6>
                                         <a class="dropdown-item" href="#">
                                              <i class="bx bx-user-circle text-muted fs-18 align-middle me-1"></i><span class="align-middle">Profile</span>
                                         </a>
@@ -64,9 +64,13 @@
 
                                         <div class="dropdown-divider my-1"></div>
 
-                                        <a class="dropdown-item text-danger" href="#">
-                                             <i class="bx bx-log-out fs-18 align-middle me-1"></i><span class="align-middle">Logout</span>
-                                        </a>
+                                      <form method="POST" action="{{ route('logout') }}">
+                                        @csrf
+                                        <button type="submit" class="dropdown-item text-danger">
+                                             <i class="bx bx-log-out fs-18 align-middle me-1"></i>
+                                             <span class="align-middle">Logout</span>
+                                        </button>
+                                        </form>
                                    </div>
                               </div>
 
